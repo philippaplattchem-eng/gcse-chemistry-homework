@@ -22,6 +22,7 @@ main{max-width:820px;margin:0 auto;padding:1.5rem 1rem 4rem}
 .question-card.wrong{border-color:var(--wnb);background:var(--wng);box-shadow:none}
 .q-header{display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.8rem}
 .q-num{background:var(--pr);color:#fff;font-weight:700;font-size:.72rem;padding:.2rem .5rem;border-radius:6px;white-space:nowrap;flex-shrink:0;margin-top:.12rem}
+.higher-badge{background:#ea580c;color:#fff;font-size:.66rem;font-weight:800;padding:.15rem .45rem;border-radius:4px;white-space:nowrap;flex-shrink:0;margin-top:.15rem;letter-spacing:.05em;text-transform:uppercase}
 .q-stem{font-size:.97rem;line-height:1.6}
 .options{display:flex;flex-direction:column;gap:.35rem;margin-left:2.6rem}
 .opt-lbl{display:flex;align-items:flex-start;gap:.6rem;cursor:pointer;padding:.4rem .6rem;border-radius:8px;transition:background .12s;font-size:.91rem;border:1px solid transparent}
@@ -84,7 +85,8 @@ function renderQuiz(){
     var opts=['A','B','C','D'].map(function(l){
       return '<label class="opt-lbl" id="opt-'+n+'-'+l+'"><input type="radio" name="q'+n+'" value="'+l+'"> <span><strong>'+l+'.</strong> '+q[l]+'</span></label>';
     }).join('');
-    div.innerHTML='<div class="q-header"><span class="q-num">Q'+n+'</span><span class="q-stem">'+q.stem+'</span></div>'
+    var hb=q.higher?'<span class="higher-badge">Higher</span>':'';
+    div.innerHTML='<div class="q-header"><span class="q-num">Q'+n+'</span>'+hb+'<span class="q-stem">'+q.stem+'</span></div>'
       +'<div class="options">'+opts+'</div>'
       +'<div class="res-icon" id="res-'+n+'"></div>'
       +'<div class="explain-box" id="ex-'+n+'"><div class="explain-lbl">Explanation</div>'+q.explain+'</div>';
