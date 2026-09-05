@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OCR A Level Chemistry: Key Definitions</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--pr:#2d6a4f;--pr-dk:#1b4332;--bg:#f4f6fb;--card:#fff;--tx:#1c1f3a;--txm:#6b7280;--bdr:#dde1f0;--r:14px;--sh:0 2px 12px rgba(45,106,79,.09);--sh2:0 8px 28px rgba(45,106,79,.20)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito','Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.65;min-height:100vh;display:flex;flex-direction:column}
+.topbar{background:#0d2e1e;color:#fff;padding:.6rem 1.5rem;display:flex;align-items:center;gap:.8rem;z-index:10}
+.topbar-back{color:rgba(255,255,255,.75);text-decoration:none;font-size:.82rem;font-weight:700;border:1px solid rgba(255,255,255,.3);padding:.22rem .7rem;border-radius:20px;transition:background .15s;white-space:nowrap}
+.topbar-back:hover{background:rgba(255,255,255,.12)}
+.topbar-title{font-size:.88rem;font-weight:600;opacity:.65}
+.hero{position:relative;overflow:hidden;background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSIxMDQiPjxwb2x5Z29uIHBvaW50cz0iMzAsMiA1OCwxNyA1OCw0NyAzMCw2MiAyLDQ3IDIsMTciIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwuMDcpIiBzdHJva2Utd2lkdGg9IjEuNCIvPjxwb2x5Z29uIHBvaW50cz0iMCw1NCAyOCw2OSAyOCw5OSAwLDExNCAtMjgsOTkgLTI4LDY5IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsLjA3KSIgc3Ryb2tlLXdpZHRoPSIxLjQiLz48cG9seWdvbiBwb2ludHM9IjYwLDU0IDg4LDY5IDg4LDk5IDYwLDExNCAzMiw5OSAzMiw2OSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LC4wNykiIHN0cm9rZS13aWR0aD0iMS40Ii8+PC9zdmc+") center/60px 104px repeat,linear-gradient(135deg,#0d2e1e 0%,#1b4332 45%,#2d6a4f 80%,#40916c 100%);color:#fff;padding:3rem 1.5rem 5.5rem;text-align:center}
+.hero::before{content:'';position:absolute;top:-60px;right:-60px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.07) 0%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-40px;left:-40px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(64,145,108,.35) 0%,transparent 70%);pointer-events:none}
+.hero-inner{position:relative;z-index:1}
+.hero-icon{display:block;width:54px;height:54px;margin:0 auto .8rem;filter:drop-shadow(0 3px 10px rgba(0,0,0,.3))}
+.hero h1{font-size:1.95rem;font-weight:900;letter-spacing:-.02em;margin-bottom:.4rem;text-shadow:0 2px 8px rgba(0,0,0,.2)}
+.hero p{font-size:.97rem;opacity:.87;max-width:500px;margin:0 auto;font-weight:600}
+.hero-sub{margin-top:.4rem;font-size:.85rem;opacity:.65;font-weight:400}
+.hero-wave{position:absolute;bottom:-1px;left:0;width:100%;height:56px;pointer-events:none}
+main{flex:1;max-width:900px;margin:2.2rem auto 4rem;padding:0 1.2rem;width:100%;display:flex;flex-direction:column;align-items:center}
+.intro-note{background:var(--card);border:1.5px solid var(--bdr);border-radius:var(--r);padding:1rem 1.3rem;font-size:.88rem;color:var(--txm);max-width:620px;width:100%;margin-bottom:2rem;line-height:1.6}
+.intro-note strong{color:var(--tx)}
+.section-label{font-size:.82rem;font-weight:700;color:var(--txm);margin-bottom:.85rem;width:100%;max-width:620px;padding-left:2px}
+.resource-list{display:flex;flex-direction:column;gap:.85rem;width:100%;max-width:620px;margin-bottom:2.2rem}
+.resource-card{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);text-decoration:none;color:var(--tx);display:flex;align-items:stretch;transition:transform .18s,box-shadow .18s;border:1.5px solid var(--bdr)}
+.resource-card:hover{transform:translateY(-3px);box-shadow:var(--sh2);border-color:#74c69d}
+.rc-icon-col{display:flex;align-items:center;justify-content:center;width:64px;flex-shrink:0;border-radius:calc(var(--r) - 1.5px) 0 0 calc(var(--r) - 1.5px);font-size:1.4rem;font-weight:900;color:#fff}
+.rc-icon-col.p1{background:linear-gradient(160deg,#001f40,#0055aa)}
+.rc-icon-col.p2{background:linear-gradient(160deg,#1a4731,#2d8c56)}
+.rc-icon-col.p3{background:linear-gradient(160deg,#3d1b6e,#7b3faa)}
+.rc-body{padding:.95rem 1.15rem;flex:1}
+.rc-title{font-size:.97rem;font-weight:800;margin-bottom:.22rem;color:var(--tx)}
+.rc-desc{font-size:.83rem;color:var(--txm);line-height:1.5;font-weight:600}
+.rc-pills{display:flex;flex-wrap:wrap;gap:.32rem;margin-top:.5rem}
+.rc-pill{background:var(--bg);border:1px solid var(--bdr);border-radius:20px;padding:.12rem .55rem;font-size:.71rem;font-weight:700;color:var(--txm)}
+.rc-arrow{display:flex;align-items:center;padding:0 1rem;color:var(--pr);font-size:1.2rem;opacity:.45;transition:opacity .15s;flex-shrink:0}
+.resource-card:hover .rc-arrow{opacity:1}
+footer{text-align:center;padding:1.4rem;font-size:.78rem;color:var(--txm);border-top:1px solid var(--bdr);background:var(--card);font-weight:600}
+footer a{color:var(--pr);text-decoration:none}
+@media(max-width:600px){.hero h1{font-size:1.5rem}.rc-icon-col{width:52px;font-size:1.1rem}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="alevel-home.html" class="topbar-back">&#8592; A Level Home</a>
+  <span class="topbar-title">Key Definitions</span>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <svg class="hero-icon" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="8" y="6" width="44" height="50" rx="4"/>
+      <line x1="16" y1="18" x2="44" y2="18"/>
+      <line x1="16" y1="26" x2="44" y2="26"/>
+      <line x1="16" y1="34" x2="36" y2="34"/>
+      <line x1="16" y1="42" x2="32" y2="42"/>
+    </svg>
+    <h1>Key Definitions</h1>
+    <p>Every definition you need to know for OCR A Level Chemistry H432</p>
+    <p class="hero-sub">Organised by paper &bull; Searchable &bull; Based on the specification</p>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,28 C240,56 480,0 720,28 C960,56 1200,0 1440,28 L1440,56 L0,56 Z" fill="#f4f6fb"/>
+  </svg>
+</div>
+
+<main>
+
+  <div class="intro-note">
+    <strong>How to use this resource:</strong> Choose the paper you are revising. Each page lists every key definition for that paper, organised by module and topic. Use the search box to find any term instantly.
+  </div>
+
+  <div class="section-label">Select a paper</div>
+  <div class="resource-list">
+
+    <a href="alevel-definitions-p1.html" class="resource-card">
+      <div class="rc-icon-col p1">P1</div>
+      <div class="rc-body">
+        <div class="rc-title">Paper 1 Definitions</div>
+        <div class="rc-desc">All key definitions for H432/01 &mdash; Periodic Table, Elements and Physical Chemistry. Covers Modules 2, 3 and 5.</div>
+        <div class="rc-pills">
+          <span class="rc-pill">H432/01</span>
+          <span class="rc-pill">Modules 2, 3 &amp; 5</span>
+          <span class="rc-pill">~150 definitions</span>
+        </div>
+      </div>
+      <div class="rc-arrow">&#8250;</div>
+    </a>
+
+    <a href="alevel-definitions-p2.html" class="resource-card">
+      <div class="rc-icon-col p2">P2</div>
+      <div class="rc-body">
+        <div class="rc-title">Paper 2 Definitions</div>
+        <div class="rc-desc">All key definitions for H432/02 &mdash; Synthesis and Analytical Techniques. Covers Modules 2, 4 and 6.</div>
+        <div class="rc-pills">
+          <span class="rc-pill">H432/02</span>
+          <span class="rc-pill">Modules 2, 4 &amp; 6</span>
+          <span class="rc-pill">~120 definitions</span>
+        </div>
+      </div>
+      <div class="rc-arrow">&#8250;</div>
+    </a>
+
+    <a href="alevel-definitions-p3.html" class="resource-card">
+      <div class="rc-icon-col p3">P3</div>
+      <div class="rc-body">
+        <div class="rc-title">Paper 3 Definitions</div>
+        <div class="rc-desc">All key definitions for H432/03 &mdash; Unified Chemistry. Covers Module 1 practical skills, synoptic terms and quick-reference summary tables.</div>
+        <div class="rc-pills">
+          <span class="rc-pill">H432/03</span>
+          <span class="rc-pill">All modules (synoptic)</span>
+          <span class="rc-pill">Module 1 practical skills</span>
+        </div>
+      </div>
+      <div class="rc-arrow">&#8250;</div>
+    </a>
+
+  </div>
+
+</main>
+
+<footer>
+  OCR A Level Chemistry H432 &nbsp;&bull;&nbsp; <a href="alevel-home.html">&#8592; A Level Home</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paper 1 Key Definitions | OCR A Level Chemistry</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--pr:#2d6a4f;--pr-dk:#1b4332;--p1:#0055aa;--p1-dk:#001f40;--bg:#f4f6fb;--card:#fff;--tx:#1c1f3a;--txm:#6b7280;--bdr:#dde1f0;--r:12px;--sh:0 2px 12px rgba(45,106,79,.09)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito','Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.65;min-height:100vh;display:flex;flex-direction:column}
+.topbar{background:#0d2e1e;color:#fff;padding:.6rem 1.5rem;display:flex;align-items:center;gap:.8rem;z-index:10}
+.topbar-back{color:rgba(255,255,255,.75);text-decoration:none;font-size:.82rem;font-weight:700;border:1px solid rgba(255,255,255,.3);padding:.22rem .7rem;border-radius:20px;transition:background .15s;white-space:nowrap}
+.topbar-back:hover{background:rgba(255,255,255,.12)}
+.topbar-title{font-size:.88rem;font-weight:600;opacity:.65}
+.hero{position:relative;overflow:hidden;background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSIxMDQiPjxwb2x5Z29uIHBvaW50cz0iMzAsMiA1OCwxNyA1OCw0NyAzMCw2MiAyLDQ3IDIsMTciIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwuMDcpIiBzdHJva2Utd2lkdGg9IjEuNCIvPjxwb2x5Z29uIHBvaW50cz0iMCw1NCAyOCw2OSAyOCw5OSAwLDExNCAtMjgsOTkgLTI4LDY5IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsLjA3KSIgc3Ryb2tlLXdpZHRoPSIxLjQiLz48cG9seWdvbiBwb2ludHM9IjYwLDU0IDg4LDY5IDg4LDk5IDYwLDExNCAzMiw5OSAzMiw2OSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LC4wNykiIHN0cm9rZS13aWR0aD0iMS40Ii8+PC9zdmc+") center/60px 104px repeat,linear-gradient(135deg,#001f40 0%,#003070 45%,#0055aa 80%,#1a7fcc 100%);color:#fff;padding:2.4rem 1.5rem 5rem;text-align:center}
+.hero::before{content:'';position:absolute;top:-60px;right:-60px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.07) 0%,transparent 70%);pointer-events:none}
+.hero-inner{position:relative;z-index:1}
+.paper-badge{display:inline-block;background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.45);border-radius:6px;padding:.28rem .9rem;font-size:.8rem;font-weight:800;letter-spacing:.5px;margin-bottom:.7rem}
+.hero h1{font-size:1.75rem;font-weight:900;letter-spacing:-.02em;margin-bottom:.3rem;text-shadow:0 2px 8px rgba(0,0,0,.25)}
+.hero p{font-size:.9rem;opacity:.85;max-width:460px;margin:0 auto;font-weight:600}
+.hero-wave{position:absolute;bottom:-1px;left:0;width:100%;height:52px;pointer-events:none}
+main{flex:1;max-width:860px;margin:1.8rem auto 4rem;padding:0 1.2rem;width:100%}
+
+/* Search */
+.search-wrap{position:sticky;top:0;z-index:20;background:var(--bg);padding:.7rem 0;margin-bottom:1.2rem}
+.search-inner{display:flex;align-items:center;gap:.6rem;background:var(--card);border:1.5px solid var(--bdr);border-radius:10px;padding:.45rem .9rem;box-shadow:var(--sh)}
+.search-inner svg{flex-shrink:0;opacity:.4}
+#search{border:none;outline:none;font-family:'Nunito',sans-serif;font-size:.9rem;font-weight:600;color:var(--tx);background:transparent;flex:1}
+#search::placeholder{color:var(--txm);font-weight:600}
+#count{font-size:.75rem;font-weight:700;color:var(--txm);white-space:nowrap}
+
+/* Module block */
+.module{margin-bottom:1.6rem}
+.module-hd{background:linear-gradient(135deg,var(--p1-dk),var(--p1));color:#fff;font-size:.92rem;font-weight:800;padding:.55rem 1rem;border-radius:8px;margin-bottom:.8rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none}
+.module-hd .toggle{font-size:1.1rem;transition:transform .2s}
+.module-hd.open .toggle{transform:rotate(180deg)}
+.module-body{display:none}
+.module-body.open{display:block}
+
+/* Sub section */
+.sub-hd{font-size:.82rem;font-weight:700;color:var(--p1);background:#e8f0fe;border-left:3px solid var(--p1);padding:.38rem .8rem;margin-bottom:.4rem;border-radius:0 5px 5px 0}
+
+/* Def table */
+.def-table{width:100%;border-collapse:collapse;margin-bottom:1rem;background:var(--card);border-radius:8px;overflow:hidden;box-shadow:0 1px 6px rgba(0,0,102,.06);border:1.5px solid #c8d9f5}
+.def-table tr.def-row{border-bottom:1px solid #dde8f8}
+.def-table tr.def-row:last-child{border-bottom:none}
+.def-table tr.def-row:nth-child(even) td{background:#f0f5fc}
+.def-table tr.def-row:nth-child(even) .term{background:#dce8f8}
+.def-table td{padding:.46rem .8rem;vertical-align:top;line-height:1.5;font-size:.86rem}
+.def-table .term{font-weight:700;width:30%;color:#003580;background:#e8f0fe;border-right:2px solid #c8d9f5}
+.def-table .defn{color:#222;width:70%}
+.def-table tr.hidden{display:none}
+
+/* No results */
+#no-results{display:none;text-align:center;color:var(--txm);font-size:.9rem;font-weight:600;padding:2rem;background:var(--card);border-radius:var(--r);border:1.5px solid var(--bdr)}
+
+footer{text-align:center;padding:1.4rem;font-size:.78rem;color:var(--txm);border-top:1px solid var(--bdr);background:var(--card);font-weight:600}
+footer a{color:var(--pr);text-decoration:none}
+@media(max-width:600px){.hero h1{font-size:1.4rem}.def-table .term{width:38%}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="alevel-definitions.html" class="topbar-back">&#8592; Key Definitions</a>
+  <span class="topbar-title">Paper 1 Definitions</span>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="paper-badge">H432/01</div>
+    <h1>Paper 1: Key Definitions</h1>
+    <p>Periodic Table, Elements and Physical Chemistry &bull; Modules 2, 3 and 5</p>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 52" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,26 C240,52 480,0 720,26 C960,52 1200,0 1440,26 L1440,52 L0,52 Z" fill="#f4f6fb"/>
+  </svg>
+</div>
+
+<main>
+
+<div class="search-wrap">
+  <div class="search-inner">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input id="search" type="text" placeholder="Search any definition&hellip;" oninput="filterDefs(this.value)">
+    <span id="count"></span>
+  </div>
+</div>
+
+<div id="no-results">No definitions match your search. Try a different term.</div>
+
+<!-- ═══════════════════════════════════ MODULE 2 ═══════════════════════════════════ -->
+<div class="module" id="mod2">
+  <div class="module-hd open" onclick="toggleMod(this)">Module 2: Foundations in Chemistry <span class="toggle">&#9660;</span></div>
+  <div class="module-body open">
+
+    <div class="sub-hd">2.1 Atoms, Ions and Compounds</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Atomic number</td><td class="defn">The number of protons in the nucleus of an atom</td></tr>
+      <tr class="def-row"><td class="term">Mass number</td><td class="defn">The total number of protons and neutrons in the nucleus of an atom</td></tr>
+      <tr class="def-row"><td class="term">Isotopes</td><td class="defn">Atoms of the same element with the same number of protons but different numbers of neutrons</td></tr>
+      <tr class="def-row"><td class="term">Relative isotopic mass</td><td class="defn">The mass of one atom of an isotope compared with 1/12 of the mass of one atom of carbon-12</td></tr>
+      <tr class="def-row"><td class="term">Relative atomic mass (A<sub>r</sub>)</td><td class="defn">The weighted mean mass of an atom of an element compared with 1/12 of the mass of one atom of carbon-12</td></tr>
+      <tr class="def-row"><td class="term">Relative molecular mass (M<sub>r</sub>)</td><td class="defn">The weighted mean mass of a molecule compared with 1/12 of the mass of one atom of carbon-12</td></tr>
+      <tr class="def-row"><td class="term">Relative formula mass</td><td class="defn">The weighted mean mass of a formula unit compared with 1/12 of the mass of one atom of carbon-12; used for ionic and other non-molecular substances</td></tr>
+      <tr class="def-row"><td class="term">Ion</td><td class="defn">An atom or group of atoms that has gained or lost one or more electrons, giving it a net electric charge</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">2.2 Amount of Substance</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Mole (mol)</td><td class="defn">The amount of substance containing as many elementary particles as there are atoms in exactly 12 g of carbon-12; approximately 6.02 &times; 10<sup>23</sup> entities</td></tr>
+      <tr class="def-row"><td class="term">Avogadro constant (N<sub>A</sub>)</td><td class="defn">The number of particles in one mole of any substance: 6.02 &times; 10<sup>23</sup> mol<sup>&minus;1</sup></td></tr>
+      <tr class="def-row"><td class="term">Molar mass (M)</td><td class="defn">The mass per mole of a substance; numerically equal to the relative formula mass, with units g mol<sup>&minus;1</sup></td></tr>
+      <tr class="def-row"><td class="term">Empirical formula</td><td class="defn">The simplest whole number ratio of atoms of each element in a compound</td></tr>
+      <tr class="def-row"><td class="term">Molecular formula</td><td class="defn">The actual number of atoms of each element in one molecule of a compound</td></tr>
+      <tr class="def-row"><td class="term">Structural formula</td><td class="defn">A formula showing the arrangement of atoms and bonds, written out in a line without showing every bond</td></tr>
+      <tr class="def-row"><td class="term">Displayed formula</td><td class="defn">A formula showing every atom and every covalent bond in a molecule</td></tr>
+      <tr class="def-row"><td class="term">Skeletal formula</td><td class="defn">A simplified structural formula showing only the carbon skeleton and functional groups; C and H atoms are omitted</td></tr>
+      <tr class="def-row"><td class="term">Concentration</td><td class="defn">The number of moles of solute per unit volume of solution; units: mol dm<sup>&minus;3</sup></td></tr>
+      <tr class="def-row"><td class="term">Molar volume</td><td class="defn">The volume occupied by one mole of any gas; approximately 24.0 dm<sup>3</sup> at room temperature and pressure (RTP)</td></tr>
+      <tr class="def-row"><td class="term">Percentage yield</td><td class="defn">(actual yield &divide; theoretical yield) &times; 100%; a measure of the efficiency with which a reaction produces the desired product</td></tr>
+      <tr class="def-row"><td class="term">Atom economy</td><td class="defn">(sum of molar masses of desired products &divide; sum of molar masses of all products) &times; 100%; measures how efficiently reactant atoms are incorporated into the desired product</td></tr>
+      <tr class="def-row"><td class="term">Standard solution</td><td class="defn">A solution of accurately known concentration</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">2.3 Acid-Base and Redox Reactions</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Acid</td><td class="defn">A species that donates a proton (H<sup>+</sup>) to another species — Br&oslash;nsted-Lowry definition</td></tr>
+      <tr class="def-row"><td class="term">Base</td><td class="defn">A species that accepts a proton (H<sup>+</sup>) from another species — Br&oslash;nsted-Lowry definition</td></tr>
+      <tr class="def-row"><td class="term">Alkali</td><td class="defn">A base that dissolves in water to produce hydroxide ions (OH<sup>&minus;</sup>) in solution</td></tr>
+      <tr class="def-row"><td class="term">Neutralisation</td><td class="defn">A reaction between an acid and a base to form a salt and usually water</td></tr>
+      <tr class="def-row"><td class="term">Oxidation</td><td class="defn">Loss of electrons; or an increase in oxidation number</td></tr>
+      <tr class="def-row"><td class="term">Reduction</td><td class="defn">Gain of electrons; or a decrease in oxidation number</td></tr>
+      <tr class="def-row"><td class="term">Oxidising agent</td><td class="defn">A substance that oxidises another species by accepting electrons from it; itself reduced in the process</td></tr>
+      <tr class="def-row"><td class="term">Reducing agent</td><td class="defn">A substance that reduces another species by donating electrons to it; itself oxidised in the process</td></tr>
+      <tr class="def-row"><td class="term">Oxidation number</td><td class="defn">A measure of the degree of oxidation of an atom in a compound; the charge the atom would carry if all bonds were fully ionic</td></tr>
+      <tr class="def-row"><td class="term">Disproportionation</td><td class="defn">A redox reaction in which the same element is simultaneously oxidised and reduced</td></tr>
+      <tr class="def-row"><td class="term">Half-equation</td><td class="defn">An equation showing either the oxidation or the reduction part of a redox reaction, including electrons</td></tr>
+      <tr class="def-row"><td class="term">Ionic equation</td><td class="defn">An equation showing only the ions and molecules that directly take part in a reaction; spectator ions are omitted</td></tr>
+      <tr class="def-row"><td class="term">Spectator ion</td><td class="defn">An ion present in solution during a reaction that does not participate in it and appears unchanged on both sides of the equation</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">2.4 Electrons, Bonding and Structure</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">First ionisation energy</td><td class="defn">The energy required to remove one mole of electrons from one mole of gaseous atoms in their ground state: X(g) &rarr; X<sup>+</sup>(g) + e<sup>&minus;</sup></td></tr>
+      <tr class="def-row"><td class="term">Successive ionisation energies</td><td class="defn">The energies required to remove electrons one at a time from a mole of gaseous atoms or ions</td></tr>
+      <tr class="def-row"><td class="term">Electron shielding</td><td class="defn">The reduction in the effective nuclear attraction experienced by outer electrons, caused by the repulsion of inner-shell electrons</td></tr>
+      <tr class="def-row"><td class="term">Effective nuclear charge</td><td class="defn">The net positive charge experienced by an outer electron after accounting for the shielding effect of inner electrons</td></tr>
+      <tr class="def-row"><td class="term">Ionic bond</td><td class="defn">The electrostatic attraction between oppositely charged ions</td></tr>
+      <tr class="def-row"><td class="term">Covalent bond</td><td class="defn">A shared pair of electrons between two atoms</td></tr>
+      <tr class="def-row"><td class="term">Dative (coordinate) bond</td><td class="defn">A covalent bond in which both electrons in the shared pair are donated by the same atom</td></tr>
+      <tr class="def-row"><td class="term">Metallic bond</td><td class="defn">The electrostatic attraction between a lattice of positive metal ions and a &lsquo;sea&rsquo; of delocalised electrons</td></tr>
+      <tr class="def-row"><td class="term">Electronegativity</td><td class="defn">The ability of an atom in a covalent bond to attract the shared pair of electrons towards itself</td></tr>
+      <tr class="def-row"><td class="term">Polar bond</td><td class="defn">A covalent bond with unequal sharing of electrons due to a difference in electronegativity, resulting in partial charges (&delta;+ and &delta;&minus;)</td></tr>
+      <tr class="def-row"><td class="term">Polar molecule</td><td class="defn">A molecule with a net dipole moment, due to polar bonds arranged asymmetrically</td></tr>
+      <tr class="def-row"><td class="term">Van der Waals forces</td><td class="defn">Weak intermolecular forces present in all substances, caused by temporary induced dipoles</td></tr>
+      <tr class="def-row"><td class="term">Permanent dipole-dipole interactions</td><td class="defn">Intermolecular attractions between the permanent partial charges on polar molecules</td></tr>
+      <tr class="def-row"><td class="term">Hydrogen bond</td><td class="defn">A strong intermolecular force between a hydrogen atom covalently bonded to N, O, or F and a lone pair on a neighbouring N, O, or F atom</td></tr>
+      <tr class="def-row"><td class="term">Delocalised electrons</td><td class="defn">Electrons not associated with a single atom or bond, but spread over several atoms (e.g. in metals and benzene)</td></tr>
+      <tr class="def-row"><td class="term">Giant ionic lattice</td><td class="defn">A regular three-dimensional arrangement of oppositely charged ions held together by electrostatic forces throughout the structure</td></tr>
+      <tr class="def-row"><td class="term">Giant covalent structure</td><td class="defn">A solid in which all atoms are linked by a continuous network of covalent bonds throughout the entire structure (e.g. diamond, silicon dioxide)</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">2.5 Shapes of Molecules and Ions</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">VSEPR theory</td><td class="defn">Valence Shell Electron Pair Repulsion: electron pairs around a central atom repel each other and arrange to minimise repulsion, determining molecular shape</td></tr>
+      <tr class="def-row"><td class="term">Bond angle</td><td class="defn">The angle between two bonds originating from the same atom</td></tr>
+      <tr class="def-row"><td class="term">Linear</td><td class="defn">Molecular shape with a bond angle of 180&deg;; 2 bonding pairs, 0 lone pairs (e.g. CO<sub>2</sub>)</td></tr>
+      <tr class="def-row"><td class="term">Trigonal planar</td><td class="defn">Molecular shape with bond angles of 120&deg;; 3 bonding pairs, 0 lone pairs; all atoms in one plane (e.g. BF<sub>3</sub>)</td></tr>
+      <tr class="def-row"><td class="term">Tetrahedral</td><td class="defn">Molecular shape with bond angles of approximately 109.5&deg;; 4 bonding pairs, 0 lone pairs (e.g. CH<sub>4</sub>)</td></tr>
+      <tr class="def-row"><td class="term">Trigonal pyramidal</td><td class="defn">Molecular shape with bond angles of approximately 107&deg;; 3 bonding pairs, 1 lone pair (e.g. NH<sub>3</sub>)</td></tr>
+      <tr class="def-row"><td class="term">Bent (V-shaped)</td><td class="defn">Molecular shape with reduced bond angles due to lone pairs on the central atom (e.g. H<sub>2</sub>O, &asymp;104.5&deg;)</td></tr>
+      <tr class="def-row"><td class="term">Octahedral</td><td class="defn">Molecular shape with bond angles of 90&deg; and 180&deg;; 6 bonding pairs, 0 lone pairs (e.g. SF<sub>6</sub>)</td></tr>
+    </tbody></table>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════ MODULE 3 ═══════════════════════════════════ -->
+<div class="module" id="mod3">
+  <div class="module-hd open" onclick="toggleMod(this)">Module 3: Periodic Table and Energy <span class="toggle">&#9660;</span></div>
+  <div class="module-body open">
+
+    <div class="sub-hd">3.1 Periodicity</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Period</td><td class="defn">A horizontal row of elements in the periodic table</td></tr>
+      <tr class="def-row"><td class="term">Group</td><td class="defn">A vertical column of elements in the periodic table; elements in the same group have the same number of outer-shell electrons and similar chemical properties</td></tr>
+      <tr class="def-row"><td class="term">Periodicity</td><td class="defn">The regular variation in the properties of elements as atomic number increases across a period or down a group</td></tr>
+      <tr class="def-row"><td class="term">s-block</td><td class="defn">Elements in Groups 1 and 2, whose highest-energy electrons occupy s orbitals</td></tr>
+      <tr class="def-row"><td class="term">p-block</td><td class="defn">Elements in Groups 13&ndash;18, whose highest-energy electrons occupy p orbitals</td></tr>
+      <tr class="def-row"><td class="term">d-block</td><td class="defn">Elements in Groups 3&ndash;12, whose highest-energy electrons occupy d orbitals</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">3.2 Group 2 and the Halogens</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Thermal decomposition</td><td class="defn">The breaking down of a compound into simpler substances by the application of heat</td></tr>
+      <tr class="def-row"><td class="term">Disproportionation</td><td class="defn">A redox reaction in which the same element is simultaneously oxidised and reduced</td></tr>
+      <tr class="def-row"><td class="term">Displacement reaction</td><td class="defn">A reaction in which a more reactive element displaces a less reactive element from a compound in solution</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">3.3 Qualitative Analysis</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Precipitate</td><td class="defn">An insoluble solid formed when two solutions are mixed</td></tr>
+      <tr class="def-row"><td class="term">Qualitative analysis</td><td class="defn">An analytical method used to identify which substances are present in a sample, without quantifying how much</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">3.4 Enthalpy Changes</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Enthalpy change (&Delta;H)</td><td class="defn">The heat energy transferred to or from the surroundings during a chemical reaction occurring at constant pressure</td></tr>
+      <tr class="def-row"><td class="term">Exothermic reaction</td><td class="defn">A reaction in which heat energy is transferred to the surroundings; &Delta;H is negative</td></tr>
+      <tr class="def-row"><td class="term">Endothermic reaction</td><td class="defn">A reaction in which heat energy is absorbed from the surroundings; &Delta;H is positive</td></tr>
+      <tr class="def-row"><td class="term">Standard conditions</td><td class="defn">Temperature of 298 K (25&deg;C) and pressure of 100 kPa; substances in their standard states</td></tr>
+      <tr class="def-row"><td class="term">Standard state</td><td class="defn">The physical state of a substance under standard conditions (298 K, 100 kPa)</td></tr>
+      <tr class="def-row"><td class="term">Standard enthalpy of formation</td><td class="defn">The enthalpy change when one mole of a compound is formed from its constituent elements in their standard states under standard conditions</td></tr>
+      <tr class="def-row"><td class="term">Standard enthalpy of combustion</td><td class="defn">The enthalpy change when one mole of a substance is completely burned in excess oxygen under standard conditions</td></tr>
+      <tr class="def-row"><td class="term">Standard enthalpy of neutralisation</td><td class="defn">The enthalpy change when one mole of water is formed from the reaction of an acid with an alkali under standard conditions</td></tr>
+      <tr class="def-row"><td class="term">Hess&rsquo;s Law</td><td class="defn">The total enthalpy change for a chemical reaction is independent of the route taken, provided the initial and final conditions are the same</td></tr>
+      <tr class="def-row"><td class="term">Average bond enthalpy</td><td class="defn">The average energy required to break one mole of a specified type of bond in gaseous molecules, averaged over many different compounds</td></tr>
+      <tr class="def-row"><td class="term">Calorimetry</td><td class="defn">A technique used to measure the heat energy change in a chemical reaction using a calorimeter; q = mc&Delta;T</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">3.5 Reaction Rates</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Rate of reaction</td><td class="defn">The change in concentration of a reactant or product per unit time; units: mol dm<sup>&minus;3</sup> s<sup>&minus;1</sup></td></tr>
+      <tr class="def-row"><td class="term">Activation energy (E<sub>a</sub>)</td><td class="defn">The minimum energy that colliding particles must possess for a reaction to occur</td></tr>
+      <tr class="def-row"><td class="term">Boltzmann distribution</td><td class="defn">A graph showing the spread of kinetic energies among the molecules in a gas sample at a given temperature</td></tr>
+      <tr class="def-row"><td class="term">Collision theory</td><td class="defn">A model stating that a reaction occurs when particles collide with energy &ge; the activation energy and with the correct orientation</td></tr>
+      <tr class="def-row"><td class="term">Catalyst</td><td class="defn">A substance that increases the rate of a reaction without being consumed in the overall reaction, by providing an alternative reaction pathway with a lower activation energy</td></tr>
+      <tr class="def-row"><td class="term">Heterogeneous catalyst</td><td class="defn">A catalyst that is in a different physical phase from the reactants</td></tr>
+      <tr class="def-row"><td class="term">Homogeneous catalyst</td><td class="defn">A catalyst that is in the same physical phase as the reactants</td></tr>
+      <tr class="def-row"><td class="term">Adsorption</td><td class="defn">The process by which reactant molecules bind to the surface of a solid catalyst, forming temporary bonds</td></tr>
+      <tr class="def-row"><td class="term">Desorption</td><td class="defn">The process by which product molecules leave the surface of a solid catalyst after reaction</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">3.6 Chemical Equilibrium</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Reversible reaction</td><td class="defn">A reaction that can proceed in both the forward and the reverse direction</td></tr>
+      <tr class="def-row"><td class="term">Dynamic equilibrium</td><td class="defn">The state in a closed system where the rate of the forward reaction equals the rate of the reverse reaction, and the concentrations of reactants and products remain constant</td></tr>
+      <tr class="def-row"><td class="term">Closed system</td><td class="defn">A system in which no matter can enter or leave, though energy may be exchanged with the surroundings</td></tr>
+      <tr class="def-row"><td class="term">Le Chatelier&rsquo;s principle</td><td class="defn">If a system at dynamic equilibrium is subjected to a change in conditions, the equilibrium will shift in the direction that opposes the change</td></tr>
+      <tr class="def-row"><td class="term">Equilibrium constant (<i>K</i><sub>c</sub>)</td><td class="defn">An expression, at a given temperature, of the ratio of product concentrations to reactant concentrations at equilibrium, each raised to the power of its stoichiometric coefficient</td></tr>
+      <tr class="def-row"><td class="term">Position of equilibrium</td><td class="defn">A description of the relative amounts of reactants and products at equilibrium; shifts left (towards reactants) or right (towards products) in response to changes</td></tr>
+    </tbody></table>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════ MODULE 5 ═══════════════════════════════════ -->
+<div class="module" id="mod5">
+  <div class="module-hd open" onclick="toggleMod(this)">Module 5: Physical Chemistry and Transition Elements <span class="toggle">&#9660;</span></div>
+  <div class="module-body open">
+
+    <div class="sub-hd">5.1 Reaction Rates (Quantitative)</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Rate equation</td><td class="defn">An equation relating the rate of a reaction to the concentrations of reactants: rate = k[A]<sup>m</sup>[B]<sup>n</sup></td></tr>
+      <tr class="def-row"><td class="term">Order of reaction</td><td class="defn">The power to which the concentration of a reactant is raised in the rate equation</td></tr>
+      <tr class="def-row"><td class="term">Overall order</td><td class="defn">The sum of the powers of all concentration terms in the rate equation</td></tr>
+      <tr class="def-row"><td class="term">Rate constant (k)</td><td class="defn">The constant of proportionality in the rate equation; its value depends on temperature but not on concentration</td></tr>
+      <tr class="def-row"><td class="term">Half-life (t<sub>&frac12;</sub>)</td><td class="defn">The time taken for the concentration of a reactant to fall to half its original value</td></tr>
+      <tr class="def-row"><td class="term">Rate-determining step</td><td class="defn">The slowest step in a multi-step reaction mechanism; it controls the overall rate of the reaction</td></tr>
+      <tr class="def-row"><td class="term">Reaction mechanism</td><td class="defn">A series of elementary steps describing how reactants are converted into products, including any intermediate species</td></tr>
+      <tr class="def-row"><td class="term">Intermediate</td><td class="defn">A species formed in one step of a mechanism and consumed in a subsequent step; does not appear in the overall equation</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">5.2 Chemical Equilibria (Quantitative)</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Mole fraction (x)</td><td class="defn">The ratio of the number of moles of one component to the total number of moles in the mixture: x<sub>A</sub> = n<sub>A</sub> / n<sub>total</sub></td></tr>
+      <tr class="def-row"><td class="term">Partial pressure (p)</td><td class="defn">The pressure that a gas component would exert if it alone occupied the total volume at the same temperature: p<sub>A</sub> = x<sub>A</sub> &times; P<sub>total</sub></td></tr>
+      <tr class="def-row"><td class="term">Equilibrium constant (<i>K</i><sub>p</sub>)</td><td class="defn">An expression, at a given temperature, of the ratio of equilibrium partial pressures of products to those of reactants, each raised to the power of its stoichiometric coefficient</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">5.3 Acids, Bases and Buffers</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Br&oslash;nsted-Lowry acid</td><td class="defn">A proton (H<sup>+</sup>) donor</td></tr>
+      <tr class="def-row"><td class="term">Br&oslash;nsted-Lowry base</td><td class="defn">A proton (H<sup>+</sup>) acceptor</td></tr>
+      <tr class="def-row"><td class="term">Conjugate acid-base pair</td><td class="defn">Two species that differ by one proton; the conjugate acid has one more H<sup>+</sup> than its conjugate base</td></tr>
+      <tr class="def-row"><td class="term">Strong acid</td><td class="defn">An acid that fully dissociates in aqueous solution (e.g. HCl, H<sub>2</sub>SO<sub>4</sub>, HNO<sub>3</sub>)</td></tr>
+      <tr class="def-row"><td class="term">Weak acid</td><td class="defn">An acid that only partially dissociates in aqueous solution; the dissociation is an equilibrium (e.g. CH<sub>3</sub>COOH)</td></tr>
+      <tr class="def-row"><td class="term">pH</td><td class="defn">A logarithmic scale measuring hydrogen ion concentration: pH = &minus;log<sub>10</sub>[H<sup>+</sup>]</td></tr>
+      <tr class="def-row"><td class="term">Acid dissociation constant (<i>K</i><sub>a</sub>)</td><td class="defn">The equilibrium constant for the dissociation of a weak acid HA: <i>K</i><sub>a</sub> = [H<sup>+</sup>][A<sup>&minus;</sup>] / [HA]; units: mol dm<sup>&minus;3</sup></td></tr>
+      <tr class="def-row"><td class="term">p<i>K</i><sub>a</sub></td><td class="defn">The negative logarithm (base 10) of the acid dissociation constant: p<i>K</i><sub>a</sub> = &minus;log<sub>10</sub>(<i>K</i><sub>a</sub>)</td></tr>
+      <tr class="def-row"><td class="term">Ionic product of water (<i>K</i><sub>w</sub>)</td><td class="defn"><i>K</i><sub>w</sub> = [H<sup>+</sup>][OH<sup>&minus;</sup>] = 1.00 &times; 10<sup>&minus;14</sup> mol<sup>2</sup> dm<sup>&minus;6</sup> at 298 K</td></tr>
+      <tr class="def-row"><td class="term">Buffer solution</td><td class="defn">A solution that resists large changes in pH when small amounts of acid or alkali are added; contains a weak acid and its conjugate base in comparable concentrations</td></tr>
+      <tr class="def-row"><td class="term">Equivalence point</td><td class="defn">The point in a titration where stoichiometrically equivalent amounts of acid and base have been mixed</td></tr>
+      <tr class="def-row"><td class="term">Half-equivalence point</td><td class="defn">The point in a weak acid-strong base titration where [HA] = [A<sup>&minus;</sup>] and pH = p<i>K</i><sub>a</sub></td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">5.4 Thermodynamics</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Lattice enthalpy</td><td class="defn">The enthalpy change when one mole of an ionic compound is formed from its constituent gaseous ions under standard conditions (exothermic; lattice formation)</td></tr>
+      <tr class="def-row"><td class="term">Standard enthalpy of atomisation</td><td class="defn">The enthalpy change when one mole of gaseous atoms is formed from the element in its standard state</td></tr>
+      <tr class="def-row"><td class="term">First electron affinity</td><td class="defn">The enthalpy change when one electron is added to each atom in one mole of isolated gaseous atoms: X(g) + e<sup>&minus;</sup> &rarr; X<sup>&minus;</sup>(g)</td></tr>
+      <tr class="def-row"><td class="term">Born-Haber cycle</td><td class="defn">A thermodynamic cycle based on Hess&rsquo;s Law, used to calculate lattice enthalpy from other measurable enthalpy changes</td></tr>
+      <tr class="def-row"><td class="term">Enthalpy of hydration</td><td class="defn">The enthalpy change when one mole of gaseous ions is surrounded by water molecules to form a solution at infinite dilution</td></tr>
+      <tr class="def-row"><td class="term">Enthalpy of solution</td><td class="defn">The enthalpy change when one mole of a substance dissolves completely in water to form a solution at infinite dilution</td></tr>
+      <tr class="def-row"><td class="term">Entropy (S)</td><td class="defn">A measure of the dispersal of energy or the degree of disorder in a system; units: J mol<sup>&minus;1</sup> K<sup>&minus;1</sup></td></tr>
+      <tr class="def-row"><td class="term">Entropy change (&Delta;S)</td><td class="defn">The change in entropy: &Delta;S = &Sigma;S&deg;(products) &minus; &Sigma;S&deg;(reactants)</td></tr>
+      <tr class="def-row"><td class="term">Gibbs free energy change (&Delta;G)</td><td class="defn">A thermodynamic quantity determining feasibility: &Delta;G = &Delta;H &minus; T&Delta;S; units: kJ mol<sup>&minus;1</sup></td></tr>
+      <tr class="def-row"><td class="term">Feasible (spontaneous) reaction</td><td class="defn">A reaction for which &Delta;G &le; 0; will proceed without a continuous input of energy</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">5.5 Electrochemistry</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Standard electrode potential (E&deg;)</td><td class="defn">The potential of a half-cell relative to the standard hydrogen electrode under standard conditions (298 K, 100 kPa, 1 mol dm<sup>&minus;3</sup>)</td></tr>
+      <tr class="def-row"><td class="term">Standard hydrogen electrode</td><td class="defn">The reference half-cell with E&deg; = 0.00 V; H<sub>2</sub>(g) at 100 kPa over a Pt electrode in 1 mol dm<sup>&minus;3</sup> H<sup>+</sup>(aq) at 298 K</td></tr>
+      <tr class="def-row"><td class="term">Electrochemical cell</td><td class="defn">A device that converts chemical energy from a spontaneous redox reaction into electrical energy</td></tr>
+      <tr class="def-row"><td class="term">Electrolytic cell</td><td class="defn">A cell in which electrical energy is used to drive a non-spontaneous redox reaction</td></tr>
+      <tr class="def-row"><td class="term">EMF (E&deg;<sub>cell</sub>)</td><td class="defn">E&deg;<sub>cell</sub> = E&deg;<sub>cathode</sub> &minus; E&deg;<sub>anode</sub>; positive value indicates a feasible spontaneous reaction</td></tr>
+      <tr class="def-row"><td class="term">Salt bridge</td><td class="defn">A device connecting two half-cells that allows ion flow to maintain electrical neutrality</td></tr>
+      <tr class="def-row"><td class="term">Electrolysis</td><td class="defn">The use of electrical energy to bring about a non-spontaneous chemical reaction; oxidation at the anode, reduction at the cathode</td></tr>
+      <tr class="def-row"><td class="term">Faraday constant (F)</td><td class="defn">The charge carried by one mole of electrons: 96 485 C mol<sup>&minus;1</sup></td></tr>
+      <tr class="def-row"><td class="term">Anode</td><td class="defn">The electrode at which oxidation occurs</td></tr>
+      <tr class="def-row"><td class="term">Cathode</td><td class="defn">The electrode at which reduction occurs</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">5.6 Transition Elements</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">d-block element</td><td class="defn">An element in Groups 3&ndash;12 of the periodic table in which d orbitals are being filled</td></tr>
+      <tr class="def-row"><td class="term">Transition element</td><td class="defn">A d-block element that forms at least one stable ion with a partially filled d subshell</td></tr>
+      <tr class="def-row"><td class="term">Variable oxidation state</td><td class="defn">The ability of transition metals to form stable ions in more than one oxidation state, due to the similar energies of the 3d and 4s electrons</td></tr>
+      <tr class="def-row"><td class="term">Complex ion</td><td class="defn">A species consisting of a central metal ion bonded to one or more ligands via coordinate (dative covalent) bonds</td></tr>
+      <tr class="def-row"><td class="term">Ligand</td><td class="defn">A molecule or ion that donates a lone pair of electrons to a central metal ion, forming a coordinate bond</td></tr>
+      <tr class="def-row"><td class="term">Coordination number</td><td class="defn">The number of coordinate bonds formed between the central metal ion and its ligands</td></tr>
+      <tr class="def-row"><td class="term">Monodentate ligand</td><td class="defn">A ligand that forms one coordinate bond with the central metal ion (e.g. H<sub>2</sub>O, NH<sub>3</sub>, Cl<sup>&minus;</sup>, CN<sup>&minus;</sup>)</td></tr>
+      <tr class="def-row"><td class="term">Bidentate ligand</td><td class="defn">A ligand that forms two coordinate bonds with the central metal ion (e.g. ethane-1,2-diamine; ethanedioate)</td></tr>
+      <tr class="def-row"><td class="term">Polydentate ligand</td><td class="defn">A ligand that forms more than two coordinate bonds with the central metal ion (e.g. EDTA<sup>4&minus;</sup>, which forms six coordinate bonds)</td></tr>
+      <tr class="def-row"><td class="term">Chelate effect</td><td class="defn">The increased thermodynamic stability of complexes with bidentate or polydentate ligands, due to the large positive entropy change when monodentate ligands are displaced</td></tr>
+      <tr class="def-row"><td class="term">d-d transition</td><td class="defn">The absorption of visible light that promotes an electron from a lower-energy to a higher-energy d orbital in a transition metal complex, causing the complex to appear coloured</td></tr>
+      <tr class="def-row"><td class="term">Ligand substitution</td><td class="defn">A reaction in which one or more ligands in a complex are replaced by other ligands</td></tr>
+      <tr class="def-row"><td class="term">Amphoteric</td><td class="defn">A substance that can act as both an acid and a base (e.g. Al(OH)<sub>3</sub> reacts with both acids and alkalis)</td></tr>
+      <tr class="def-row"><td class="term"><i>cis</i> isomer</td><td class="defn">An isomer in which two identical ligands are positioned on the same side of the central metal ion (90&deg; apart in an octahedral complex)</td></tr>
+      <tr class="def-row"><td class="term"><i>trans</i> isomer</td><td class="defn">An isomer in which two identical ligands are positioned on opposite sides of the central metal ion (180&deg; apart in an octahedral complex)</td></tr>
+      <tr class="def-row"><td class="term">Optical isomers of complex ions</td><td class="defn">Non-superimposable mirror-image forms of a complex; arise in octahedral complexes with three bidentate ligands</td></tr>
+    </tbody></table>
+
+  </div>
+</div>
+
+</main>
+
+<footer>
+  OCR A Level Chemistry H432/01 &nbsp;&bull;&nbsp; <a href="alevel-definitions.html">&#8592; All definition sheets</a> &nbsp;&bull;&nbsp; <a href="alevel-home.html">A Level Home</a>
+</footer>
+
+<script>
+function toggleMod(hd){
+  hd.classList.toggle('open');
+  hd.nextElementSibling.classList.toggle('open');
+}
+
+function filterDefs(q){
+  q = q.toLowerCase().trim();
+  const rows = document.querySelectorAll('.def-row');
+  let visible = 0;
+  rows.forEach(r => {
+    const match = !q || r.textContent.toLowerCase().includes(q);
+    r.classList.toggle('hidden', !match);
+    if(match) visible++;
+    // Keep parent module open if any row visible
+  });
+  // Show all module bodies when searching
+  document.querySelectorAll('.module-body').forEach(b => {
+    if(q) b.classList.add('open');
+  });
+  document.querySelectorAll('.module-hd').forEach(h => {
+    if(q) h.classList.add('open');
+  });
+  const countEl = document.getElementById('count');
+  countEl.textContent = q ? visible + ' result' + (visible !== 1 ? 's' : '') : '';
+  document.getElementById('no-results').style.display = (q && visible === 0) ? 'block' : 'none';
+}
+</script>
+</body>
+</html>

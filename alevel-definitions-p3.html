@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paper 3 Key Definitions | OCR A Level Chemistry</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--pr:#2d6a4f;--p3:#7b3faa;--p3-dk:#3d1b6e;--bg:#f4f6fb;--card:#fff;--tx:#1c1f3a;--txm:#6b7280;--bdr:#dde1f0;--r:12px;--sh:0 2px 12px rgba(74,20,140,.09)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito','Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.65;min-height:100vh;display:flex;flex-direction:column}
+.topbar{background:#0d2e1e;color:#fff;padding:.6rem 1.5rem;display:flex;align-items:center;gap:.8rem;z-index:10}
+.topbar-back{color:rgba(255,255,255,.75);text-decoration:none;font-size:.82rem;font-weight:700;border:1px solid rgba(255,255,255,.3);padding:.22rem .7rem;border-radius:20px;transition:background .15s;white-space:nowrap}
+.topbar-back:hover{background:rgba(255,255,255,.12)}
+.topbar-title{font-size:.88rem;font-weight:600;opacity:.65}
+.hero{position:relative;overflow:hidden;background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSIxMDQiPjxwb2x5Z29uIHBvaW50cz0iMzAsMiA1OCwxNyA1OCw0NyAzMCw2MiAyLDQ3IDIsMTciIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwuMDcpIiBzdHJva2Utd2lkdGg9IjEuNCIvPjxwb2x5Z29uIHBvaW50cz0iMCw1NCAyOCw2OSAyOCw5OSAwLDExNCAtMjgsOTkgLTI4LDY5IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsLjA3KSIgc3Ryb2tlLXdpZHRoPSIxLjQiLz48cG9seWdvbiBwb2ludHM9IjYwLDU0IDg4LDY5IDg4LDk5IDYwLDExNCAzMiw5OSAzMiw2OSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LC4wNykiIHN0cm9rZS13aWR0aD0iMS40Ii8+PC9zdmc+") center/60px 104px repeat,linear-gradient(135deg,#3d1b6e 0%,#5c2a8e 45%,#7b3faa 80%,#9c5cc7 100%);color:#fff;padding:2.4rem 1.5rem 5rem;text-align:center}
+.hero::before{content:'';position:absolute;top:-60px;right:-60px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.07) 0%,transparent 70%);pointer-events:none}
+.hero-inner{position:relative;z-index:1}
+.paper-badge{display:inline-block;background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.45);border-radius:6px;padding:.28rem .9rem;font-size:.8rem;font-weight:800;letter-spacing:.5px;margin-bottom:.7rem}
+.hero h1{font-size:1.75rem;font-weight:900;letter-spacing:-.02em;margin-bottom:.3rem;text-shadow:0 2px 8px rgba(0,0,0,.25)}
+.hero p{font-size:.9rem;opacity:.85;max-width:460px;margin:0 auto;font-weight:600}
+.hero-wave{position:absolute;bottom:-1px;left:0;width:100%;height:52px;pointer-events:none}
+main{flex:1;max-width:860px;margin:1.8rem auto 4rem;padding:0 1.2rem;width:100%}
+.info-note{background:var(--card);border-left:4px solid var(--p3);border-radius:0 8px 8px 0;padding:.75rem 1rem;font-size:.84rem;color:var(--txm);margin-bottom:1.2rem;line-height:1.6}
+.info-note strong{color:var(--tx)}
+.search-wrap{position:sticky;top:0;z-index:20;background:var(--bg);padding:.7rem 0;margin-bottom:1.2rem}
+.search-inner{display:flex;align-items:center;gap:.6rem;background:var(--card);border:1.5px solid var(--bdr);border-radius:10px;padding:.45rem .9rem;box-shadow:var(--sh)}
+.search-inner svg{flex-shrink:0;opacity:.4}
+#search{border:none;outline:none;font-family:'Nunito',sans-serif;font-size:.9rem;font-weight:600;color:var(--tx);background:transparent;flex:1}
+#search::placeholder{color:var(--txm);font-weight:600}
+#count{font-size:.75rem;font-weight:700;color:var(--txm);white-space:nowrap}
+.module{margin-bottom:1.6rem}
+.module-hd{background:linear-gradient(135deg,var(--p3-dk),var(--p3));color:#fff;font-size:.92rem;font-weight:800;padding:.55rem 1rem;border-radius:8px;margin-bottom:.8rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none}
+.module-hd .toggle{font-size:1.1rem;transition:transform .2s}
+.module-hd.open .toggle{transform:rotate(180deg)}
+.module-body{display:none}
+.module-body.open{display:block}
+.sub-hd{font-size:.82rem;font-weight:700;color:var(--p3-dk);background:#ead5f5;border-left:3px solid var(--p3);padding:.38rem .8rem;margin-bottom:.4rem;border-radius:0 5px 5px 0}
+.def-table{width:100%;border-collapse:collapse;margin-bottom:1rem;background:var(--card);border-radius:8px;overflow:hidden;box-shadow:0 1px 6px rgba(74,20,140,.06);border:1.5px solid #d4b5e8}
+.def-table tr.def-row{border-bottom:1px solid #ddc8ee}
+.def-table tr.def-row:last-child{border-bottom:none}
+.def-table tr.def-row:nth-child(even) td{background:#f7f0fc}
+.def-table tr.def-row:nth-child(even) .term{background:#d9b8ee}
+.def-table td{padding:.46rem .8rem;vertical-align:top;line-height:1.5;font-size:.86rem}
+.def-table .term{font-weight:700;width:30%;color:#3d1b6e;background:#ead5f5;border-right:2px solid #d4b5e8}
+.def-table .defn{color:#222;width:70%}
+.def-table tr.hidden{display:none}
+/* Summary tables */
+.summary-table{width:100%;border-collapse:collapse;margin-bottom:1rem;background:var(--card);border-radius:8px;overflow:hidden;border:1.5px solid #d4b5e8;font-size:.84rem}
+.summary-table thead th{background:var(--p3-dk);color:#fff;padding:.5rem .8rem;font-weight:700;text-align:left}
+.summary-table td{padding:.44rem .8rem;border-bottom:1px solid #ddc8ee;vertical-align:top;line-height:1.45}
+.summary-table tr:nth-child(even) td{background:#f7f0fc}
+/* Technique cards */
+.tech-grid{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-bottom:1rem}
+.tech-card{background:var(--card);border:1.5px solid #d4b5e8;border-radius:8px;overflow:hidden}
+.tech-card .ch{background:var(--p3-dk);color:#fff;font-weight:700;font-size:.82rem;padding:.38rem .75rem}
+.tech-card .cb{padding:.6rem .75rem;font-size:.82rem;color:#333;line-height:1.5}
+.tech-card .cb p{margin-bottom:.25rem}
+.tech-card .cb strong{color:var(--p3-dk)}
+#no-results{display:none;text-align:center;color:var(--txm);font-size:.9rem;font-weight:600;padding:2rem;background:var(--card);border-radius:var(--r);border:1.5px solid var(--bdr)}
+footer{text-align:center;padding:1.4rem;font-size:.78rem;color:var(--txm);border-top:1px solid var(--bdr);background:var(--card);font-weight:600}
+footer a{color:var(--pr);text-decoration:none}
+@media(max-width:600px){.hero h1{font-size:1.4rem}.def-table .term{width:38%}.tech-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="alevel-definitions.html" class="topbar-back">&#8592; Key Definitions</a>
+  <span class="topbar-title">Paper 3 Definitions</span>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="paper-badge">H432/03</div>
+    <h1>Paper 3: Key Definitions</h1>
+    <p>Unified Chemistry (Synoptic) &bull; All Modules &bull; Module 1 Practical Skills</p>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 52" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,26 C240,52 480,0 720,26 C960,52 1200,0 1440,26 L1440,52 L0,52 Z" fill="#f4f6fb"/>
+  </svg>
+</div>
+
+<main>
+
+<div class="info-note">
+  <strong>Paper 3 is synoptic</strong> — all definitions from the Paper 1 and Paper 2 sheets are also relevant. This page covers <strong>Module 1 Practical Skills</strong> definitions specifically assessed in Paper 3, key synoptic terms, and quick-reference summary tables.
+</div>
+
+<div class="search-wrap">
+  <div class="search-inner">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input id="search" type="text" placeholder="Search any definition&hellip;" oninput="filterDefs(this.value)">
+    <span id="count"></span>
+  </div>
+</div>
+<div id="no-results">No definitions match your search. Try a different term.</div>
+
+<!-- MODULE 1 -->
+<div class="module">
+  <div class="module-hd open" onclick="toggleMod(this)">Module 1: Development of Practical Skills <span class="toggle">&#9660;</span></div>
+  <div class="module-body open">
+
+    <div class="sub-hd">1.1 Planning</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Hypothesis</td><td class="defn">A testable prediction, based on scientific reasoning, about the outcome of an experiment</td></tr>
+      <tr class="def-row"><td class="term">Independent variable</td><td class="defn">The variable that is deliberately changed by the experimenter</td></tr>
+      <tr class="def-row"><td class="term">Dependent variable</td><td class="defn">The variable that is measured in the experiment; expected to change as the independent variable changes</td></tr>
+      <tr class="def-row"><td class="term">Control variable</td><td class="defn">A variable that is kept constant throughout the experiment to ensure a fair test</td></tr>
+      <tr class="def-row"><td class="term">Qualitative observation</td><td class="defn">A description of what is observed without numerical measurement (e.g. colour change, precipitate formation, gas evolution)</td></tr>
+      <tr class="def-row"><td class="term">Quantitative measurement</td><td class="defn">A numerical measurement of a physical quantity expressed with appropriate units</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">1.2 Accuracy, Precision and Error</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Accuracy</td><td class="defn">How close a measured value is to the true (accepted) value</td></tr>
+      <tr class="def-row"><td class="term">Precision</td><td class="defn">How close repeated measurements are to each other, regardless of whether they are close to the true value</td></tr>
+      <tr class="def-row"><td class="term">Repeatability</td><td class="defn">The closeness of agreement between repeated measurements made by the same person, with the same equipment, under the same conditions</td></tr>
+      <tr class="def-row"><td class="term">Reproducibility</td><td class="defn">The closeness of agreement between results obtained by different people, using different equipment, or at different times</td></tr>
+      <tr class="def-row"><td class="term">Validity</td><td class="defn">Whether an experiment actually measures what it is designed to measure; a valid result is obtained under controlled conditions using an appropriate method</td></tr>
+      <tr class="def-row"><td class="term">Reliability</td><td class="defn">A measure of the consistency of results across repeated experiments; reliable results are both repeatable and reproducible</td></tr>
+      <tr class="def-row"><td class="term">Random error</td><td class="defn">An unpredictable, non-systematic variation in measured values that scatters results around the true value; reduced by taking many repeats and averaging</td></tr>
+      <tr class="def-row"><td class="term">Systematic error</td><td class="defn">A consistent, reproducible error that shifts all measurements by the same amount in the same direction; cannot be reduced by repeating measurements</td></tr>
+      <tr class="def-row"><td class="term">Zero error</td><td class="defn">A type of systematic error in which an instrument gives a non-zero reading when it should read zero</td></tr>
+      <tr class="def-row"><td class="term">Anomalous result</td><td class="defn">A data point that does not fit the expected pattern; identified and justified before being excluded from analysis</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">1.3 Uncertainty</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Uncertainty</td><td class="defn">The range within which the true value of a measurement is expected to lie; inherent in every measurement</td></tr>
+      <tr class="def-row"><td class="term">Absolute uncertainty</td><td class="defn">The uncertainty expressed in the same units as the measurement (e.g. 25.00 &plusmn; 0.05 cm<sup>3</sup>)</td></tr>
+      <tr class="def-row"><td class="term">Percentage uncertainty</td><td class="defn">(absolute uncertainty &divide; measured value) &times; 100%; used to compare the precision of different measurements</td></tr>
+      <tr class="def-row"><td class="term">Resolution</td><td class="defn">The smallest change in a quantity that an instrument can detect; the absolute uncertainty for a single reading is typically half the smallest scale division</td></tr>
+      <tr class="def-row"><td class="term">Concordant results</td><td class="defn">Repeat measurements that agree with each other to within a specified range (typically &plusmn;0.10 cm<sup>3</sup> for burette titres)</td></tr>
+      <tr class="def-row"><td class="term">Mean titre</td><td class="defn">The average of concordant titration results; used in all subsequent calculations</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">1.4 Processing and Interpreting Data</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Significant figures</td><td class="defn">The meaningful digits in a numerical value; includes all non-zero digits, zeros between non-zero digits, and trailing zeros after a decimal point</td></tr>
+      <tr class="def-row"><td class="term">Gradient</td><td class="defn">The slope of a line on a graph: gradient = change in y &divide; change in x; used to determine rates, rate constants, and other quantities</td></tr>
+      <tr class="def-row"><td class="term">Line of best fit</td><td class="defn">A straight line or smooth curve drawn through or close to plotted data points to show the general trend</td></tr>
+      <tr class="def-row"><td class="term">Extrapolation</td><td class="defn">Extending a line of best fit beyond the range of the measured data to estimate values outside that range</td></tr>
+      <tr class="def-row"><td class="term">Calibration curve</td><td class="defn">A graph of instrument response (e.g. absorbance) plotted against known concentrations; used to determine the concentration of an unknown sample</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<!-- Practical techniques -->
+<div class="module">
+  <div class="module-hd open" onclick="toggleMod(this)">Practical Techniques: Key Points for Paper 3 <span class="toggle">&#9660;</span></div>
+  <div class="module-body open">
+    <div class="tech-grid">
+      <div class="tech-card"><div class="ch">Titration</div><div class="cb"><p><strong>Purpose:</strong> Quantitative acid/base or redox analysis</p><p>Burette reads to &plusmn;0.05 cm<sup>3</sup>; use concordant results (&plusmn;0.10 cm<sup>3</sup>); swirl throughout; note endpoint vs equivalence point</p></div></div>
+      <div class="tech-card"><div class="ch">Colorimetry</div><div class="cb"><p><strong>Purpose:</strong> Measure concentration of a coloured solution</p><p>Use a calibration curve from known concentrations; absorbance is proportional to concentration (Beer-Lambert law); select complementary wavelength filter</p></div></div>
+      <div class="tech-card"><div class="ch">Thin-layer Chromatography (TLC)</div><div class="cb"><p><strong>Purpose:</strong> Identify components and check purity</p><p>R<sub>f</sub> = distance of spot &divide; distance of solvent front; compare with known standards; visualise with UV lamp or iodine vapour</p></div></div>
+      <div class="tech-card"><div class="ch">Gas Chromatography (GC)</div><div class="cb"><p><strong>Purpose:</strong> Separate and identify volatile organic compounds</p><p>Identify by retention time against standards; peak area is proportional to quantity; GC-MS gives both identity and structure</p></div></div>
+      <div class="tech-card"><div class="ch">Reflux</div><div class="cb"><p><strong>Purpose:</strong> Prolonged heating without loss of volatile reagents</p><p>Condenser fitted vertically; vapour condenses and returns; used for esterification, hydrolysis, synthesis reactions</p></div></div>
+      <div class="tech-card"><div class="ch">Distillation</div><div class="cb"><p><strong>Purpose:</strong> Separate or purify liquids by boiling point</p><p>Thermometer bulb at side-arm; collect fractions at desired boiling point; fractional distillation for close-boiling mixtures</p></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Synoptic definitions -->
+<div class="module">
+  <div class="module-hd open" onclick="toggleMod(this)">Synoptic Cross-Topic Definitions <span class="toggle">&#9660;</span></div>
+  <div class="module-body open">
+
+    <div class="sub-hd">Equilibrium and Thermodynamics</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Dynamic equilibrium</td><td class="defn">The state in a closed system where the rate of the forward reaction equals the rate of the reverse reaction and concentrations remain constant</td></tr>
+      <tr class="def-row"><td class="term">Le Chatelier&rsquo;s principle</td><td class="defn">If a system at equilibrium is subjected to a change, the equilibrium shifts to oppose that change</td></tr>
+      <tr class="def-row"><td class="term">Equilibrium constant (<i>K</i>)</td><td class="defn">A ratio of equilibrium product concentrations (<i>K</i><sub>c</sub>) or partial pressures (<i>K</i><sub>p</sub>) to those of reactants, each raised to the power of its stoichiometric coefficient; value depends only on temperature</td></tr>
+      <tr class="def-row"><td class="term">Feasibility</td><td class="defn">A reaction is feasible (spontaneous) when &Delta;G &le; 0; &Delta;G = &Delta;H &minus; T&Delta;S</td></tr>
+      <tr class="def-row"><td class="term">Entropy (S)</td><td class="defn">A measure of dispersal of energy or disorder; increases when solids dissolve, liquids vaporise, or moles of gas increase</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">Acids and Bases</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Br&oslash;nsted-Lowry acid</td><td class="defn">A proton (H<sup>+</sup>) donor</td></tr>
+      <tr class="def-row"><td class="term">Br&oslash;nsted-Lowry base</td><td class="defn">A proton (H<sup>+</sup>) acceptor</td></tr>
+      <tr class="def-row"><td class="term">pH</td><td class="defn">pH = &minus;log<sub>10</sub>[H<sup>+</sup>]; a logarithmic measure of hydrogen ion concentration</td></tr>
+      <tr class="def-row"><td class="term"><i>K</i><sub>a</sub></td><td class="defn">The acid dissociation constant: <i>K</i><sub>a</sub> = [H<sup>+</sup>][A<sup>&minus;</sup>] / [HA]; units: mol dm<sup>&minus;3</sup></td></tr>
+      <tr class="def-row"><td class="term"><i>K</i><sub>w</sub></td><td class="defn">The ionic product of water: <i>K</i><sub>w</sub> = [H<sup>+</sup>][OH<sup>&minus;</sup>] = 1.00 &times; 10<sup>&minus;14</sup> mol<sup>2</sup> dm<sup>&minus;6</sup> at 298 K</td></tr>
+      <tr class="def-row"><td class="term">Buffer solution</td><td class="defn">A solution that resists changes in pH when small amounts of acid or alkali are added; contains a weak acid and its conjugate base</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">Kinetics</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Rate of reaction</td><td class="defn">The change in concentration of a reactant or product per unit time; units: mol dm<sup>&minus;3</sup> s<sup>&minus;1</sup></td></tr>
+      <tr class="def-row"><td class="term">Activation energy (E<sub>a</sub>)</td><td class="defn">The minimum energy that colliding particles must have for a reaction to occur</td></tr>
+      <tr class="def-row"><td class="term">Catalyst</td><td class="defn">A substance that provides an alternative reaction pathway with a lower activation energy; not consumed in the overall reaction</td></tr>
+      <tr class="def-row"><td class="term">Rate equation</td><td class="defn">rate = k[A]<sup>m</sup>[B]<sup>n</sup>; relates rate to concentrations and the rate constant k</td></tr>
+      <tr class="def-row"><td class="term">Rate-determining step</td><td class="defn">The slowest step in a multi-step mechanism; determines the overall rate and the form of the rate equation</td></tr>
+      <tr class="def-row"><td class="term">Half-life (t<sub>&frac12;</sub>)</td><td class="defn">The time for the concentration of a reactant to halve; constant for a first-order reaction</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">Electrochemistry and Redox</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Oxidation</td><td class="defn">Loss of electrons; increase in oxidation number</td></tr>
+      <tr class="def-row"><td class="term">Reduction</td><td class="defn">Gain of electrons; decrease in oxidation number</td></tr>
+      <tr class="def-row"><td class="term">Standard electrode potential (E&deg;)</td><td class="defn">The potential of a half-cell relative to the standard hydrogen electrode under standard conditions (298 K, 100 kPa, 1 mol dm<sup>&minus;3</sup>)</td></tr>
+      <tr class="def-row"><td class="term">E&deg;<sub>cell</sub></td><td class="defn">E&deg;<sub>cell</sub> = E&deg;<sub>cathode</sub> &minus; E&deg;<sub>anode</sub>; a positive value indicates a feasible spontaneous reaction</td></tr>
+      <tr class="def-row"><td class="term">Faraday constant (F)</td><td class="defn">The charge per mole of electrons: 96 485 C mol<sup>&minus;1</sup>; moles of e<sup>&minus;</sup> = Q &divide; F</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<!-- Summary tables -->
+<div class="module">
+  <div class="module-hd open" onclick="toggleMod(this)">Quick-Reference Summary Tables <span class="toggle">&#9660;</span></div>
+  <div class="module-body open">
+
+    <div class="sub-hd">What Affects the Equilibrium Constant K?</div>
+    <table class="summary-table">
+      <thead><tr><th>Change</th><th>Effect on K</th><th>Effect on position of equilibrium</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Temperature increase</strong></td><td>K changes: increases if endothermic; decreases if exothermic</td><td>Shifts to oppose the change</td></tr>
+        <tr><td><strong>Concentration change</strong></td><td>No effect on K</td><td>Position shifts to oppose the change</td></tr>
+        <tr><td><strong>Pressure change (gases)</strong></td><td>No effect on K</td><td>Shifts to the side with fewer moles of gas</td></tr>
+        <tr><td><strong>Catalyst added</strong></td><td>No effect on K</td><td>No effect on position; increases rate of both directions equally</td></tr>
+      </tbody>
+    </table>
+
+    <div class="sub-hd">Distinguishing Aldehydes from Ketones</div>
+    <table class="summary-table">
+      <thead><tr><th>Test</th><th>Aldehyde result</th><th>Ketone result</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Tollens&rsquo; reagent</strong> (ammoniacal AgNO<sub>3</sub>, warm)</td><td>Silver mirror forms</td><td>No change</td></tr>
+        <tr><td><strong>Fehling&rsquo;s solution</strong> (warm)</td><td>Brick-red precipitate (Cu<sub>2</sub>O)</td><td>No change (stays blue)</td></tr>
+        <tr><td><strong>Acidified K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub></strong> (warm)</td><td>Orange &rarr; green (Cr<sup>3+</sup>)</td><td>No change (stays orange)</td></tr>
+        <tr><td><strong>2,4-DNPH</strong></td><td>Yellow/orange precipitate</td><td>Yellow/orange precipitate (confirms C=O only — does NOT distinguish)</td></tr>
+      </tbody>
+    </table>
+
+    <div class="sub-hd">Thermodynamic Feasibility: When is &Delta;G &le; 0?</div>
+    <table class="summary-table">
+      <thead><tr><th>&Delta;H</th><th>&Delta;S</th><th>Feasibility</th></tr></thead>
+      <tbody>
+        <tr><td>Negative (exothermic)</td><td>Positive (more disorder)</td><td>Always feasible (&Delta;G always &lt; 0)</td></tr>
+        <tr><td>Negative (exothermic)</td><td>Negative (less disorder)</td><td>Feasible only at low temperatures</td></tr>
+        <tr><td>Positive (endothermic)</td><td>Positive (more disorder)</td><td>Feasible only at high temperatures</td></tr>
+        <tr><td>Positive (endothermic)</td><td>Negative (less disorder)</td><td>Never feasible (&Delta;G always &gt; 0)</td></tr>
+      </tbody>
+    </table>
+
+    <div class="sub-hd">Common Ion Tests (Qualitative Analysis)</div>
+    <table class="summary-table">
+      <thead><tr><th>Ion</th><th>Test</th><th>Positive result</th></tr></thead>
+      <tbody>
+        <tr><td>Cl<sup>&minus;</sup></td><td>Dilute HNO<sub>3</sub>, then AgNO<sub>3</sub>(aq)</td><td>White precipitate (AgCl); soluble in dilute NH<sub>3</sub></td></tr>
+        <tr><td>Br<sup>&minus;</sup></td><td>Dilute HNO<sub>3</sub>, then AgNO<sub>3</sub>(aq)</td><td>Cream precipitate (AgBr); soluble in concentrated NH<sub>3</sub></td></tr>
+        <tr><td>I<sup>&minus;</sup></td><td>Dilute HNO<sub>3</sub>, then AgNO<sub>3</sub>(aq)</td><td>Yellow precipitate (AgI); insoluble in NH<sub>3</sub></td></tr>
+        <tr><td>SO<sub>4</sub><sup>2&minus;</sup></td><td>Dilute HCl, then BaCl<sub>2</sub>(aq)</td><td>White precipitate (BaSO<sub>4</sub>)</td></tr>
+        <tr><td>CO<sub>3</sub><sup>2&minus;</sup></td><td>Add dilute HCl; test gas with limewater</td><td>Effervescence; CO<sub>2</sub> turns limewater milky</td></tr>
+        <tr><td>NH<sub>4</sub><sup>+</sup></td><td>Add NaOH(aq), warm; test gas with damp litmus</td><td>NH<sub>3</sub> turns damp red litmus blue</td></tr>
+      </tbody>
+    </table>
+
+    <div class="sub-hd"><sup>1</sup>H NMR Chemical Shift Reference Ranges</div>
+    <table class="summary-table">
+      <thead><tr><th>Proton environment</th><th>Approximate &delta; / ppm</th></tr></thead>
+      <tbody>
+        <tr><td>R&ndash;CH<sub>3</sub>, R&ndash;CH<sub>2</sub>&ndash;R, R<sub>3</sub>CH (alkyl)</td><td>0.5&ndash;1.5</td></tr>
+        <tr><td>R&ndash;O&ndash;CH<sub>3</sub> or &ndash;O&ndash;CH<sub>2</sub>&ndash; (adjacent to O)</td><td>3.3&ndash;4.3</td></tr>
+        <tr><td>ArH (aromatic ring)</td><td>6.5&ndash;8.5</td></tr>
+        <tr><td>R&ndash;CHO (aldehyde)</td><td>9.4&ndash;10.0</td></tr>
+        <tr><td>R&ndash;COOH (carboxylic acid)</td><td>10.5&ndash;12.0</td></tr>
+        <tr><td>R&ndash;OH, R&ndash;NH<sub>2</sub> (variable, often broad)</td><td>0.5&ndash;5.0</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  OCR A Level Chemistry H432/03 &nbsp;&bull;&nbsp; <a href="alevel-definitions.html">&#8592; All definition sheets</a> &nbsp;&bull;&nbsp; <a href="alevel-home.html">A Level Home</a>
+</footer>
+
+<script>
+function toggleMod(hd){hd.classList.toggle('open');hd.nextElementSibling.classList.toggle('open')}
+function filterDefs(q){
+  q=q.toLowerCase().trim();
+  const rows=document.querySelectorAll('.def-row');
+  let v=0;
+  rows.forEach(r=>{const m=!q||r.textContent.toLowerCase().includes(q);r.classList.toggle('hidden',!m);if(m)v++});
+  if(q){document.querySelectorAll('.module-body,.module-hd').forEach(e=>e.classList.add('open'))}
+  document.getElementById('count').textContent=q?v+' result'+(v!==1?'s':''):'';
+  document.getElementById('no-results').style.display=(q&&v===0)?'block':'none';
+}
+</script>
+</body>
+</html>

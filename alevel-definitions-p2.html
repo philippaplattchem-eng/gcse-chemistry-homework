@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paper 2 Key Definitions | OCR A Level Chemistry</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--pr:#2d6a4f;--p2:#2d8c56;--p2-dk:#1a4731;--bg:#f4f6fb;--card:#fff;--tx:#1c1f3a;--txm:#6b7280;--bdr:#dde1f0;--r:12px;--sh:0 2px 12px rgba(45,106,79,.09)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito','Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.65;min-height:100vh;display:flex;flex-direction:column}
+.topbar{background:#0d2e1e;color:#fff;padding:.6rem 1.5rem;display:flex;align-items:center;gap:.8rem;z-index:10}
+.topbar-back{color:rgba(255,255,255,.75);text-decoration:none;font-size:.82rem;font-weight:700;border:1px solid rgba(255,255,255,.3);padding:.22rem .7rem;border-radius:20px;transition:background .15s;white-space:nowrap}
+.topbar-back:hover{background:rgba(255,255,255,.12)}
+.topbar-title{font-size:.88rem;font-weight:600;opacity:.65}
+.hero{position:relative;overflow:hidden;background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSIxMDQiPjxwb2x5Z29uIHBvaW50cz0iMzAsMiA1OCwxNyA1OCw0NyAzMCw2MiAyLDQ3IDIsMTciIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwuMDcpIiBzdHJva2Utd2lkdGg9IjEuNCIvPjxwb2x5Z29uIHBvaW50cz0iMCw1NCAyOCw2OSAyOCw5OSAwLDExNCAtMjgsOTkgLTI4LDY5IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsLjA3KSIgc3Ryb2tlLXdpZHRoPSIxLjQiLz48cG9seWdvbiBwb2ludHM9IjYwLDU0IDg4LDY5IDg4LDk5IDYwLDExNCAzMiw5OSAzMiw2OSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LC4wNykiIHN0cm9rZS13aWR0aD0iMS40Ii8+PC9zdmc+") center/60px 104px repeat,linear-gradient(135deg,#1a4731 0%,#2d6a4f 45%,#2d8c56 80%,#40a870 100%);color:#fff;padding:2.4rem 1.5rem 5rem;text-align:center}
+.hero::before{content:'';position:absolute;top:-60px;right:-60px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.07) 0%,transparent 70%);pointer-events:none}
+.hero-inner{position:relative;z-index:1}
+.paper-badge{display:inline-block;background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.45);border-radius:6px;padding:.28rem .9rem;font-size:.8rem;font-weight:800;letter-spacing:.5px;margin-bottom:.7rem}
+.hero h1{font-size:1.75rem;font-weight:900;letter-spacing:-.02em;margin-bottom:.3rem;text-shadow:0 2px 8px rgba(0,0,0,.25)}
+.hero p{font-size:.9rem;opacity:.85;max-width:460px;margin:0 auto;font-weight:600}
+.hero-wave{position:absolute;bottom:-1px;left:0;width:100%;height:52px;pointer-events:none}
+main{flex:1;max-width:860px;margin:1.8rem auto 4rem;padding:0 1.2rem;width:100%}
+.search-wrap{position:sticky;top:0;z-index:20;background:var(--bg);padding:.7rem 0;margin-bottom:1.2rem}
+.search-inner{display:flex;align-items:center;gap:.6rem;background:var(--card);border:1.5px solid var(--bdr);border-radius:10px;padding:.45rem .9rem;box-shadow:var(--sh)}
+.search-inner svg{flex-shrink:0;opacity:.4}
+#search{border:none;outline:none;font-family:'Nunito',sans-serif;font-size:.9rem;font-weight:600;color:var(--tx);background:transparent;flex:1}
+#search::placeholder{color:var(--txm);font-weight:600}
+#count{font-size:.75rem;font-weight:700;color:var(--txm);white-space:nowrap}
+.module{margin-bottom:1.6rem}
+.module-hd{background:linear-gradient(135deg,var(--p2-dk),var(--p2));color:#fff;font-size:.92rem;font-weight:800;padding:.55rem 1rem;border-radius:8px;margin-bottom:.8rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none}
+.module-hd .toggle{font-size:1.1rem;transition:transform .2s}
+.module-hd.open .toggle{transform:rotate(180deg)}
+.module-body{display:none}
+.module-body.open{display:block}
+.sub-hd{font-size:.82rem;font-weight:700;color:var(--p2-dk);background:#d7edd9;border-left:3px solid var(--p2);padding:.38rem .8rem;margin-bottom:.4rem;border-radius:0 5px 5px 0}
+.def-table{width:100%;border-collapse:collapse;margin-bottom:1rem;background:var(--card);border-radius:8px;overflow:hidden;box-shadow:0 1px 6px rgba(0,80,30,.06);border:1.5px solid #b8dbbe}
+.def-table tr.def-row{border-bottom:1px solid #cce5cf}
+.def-table tr.def-row:last-child{border-bottom:none}
+.def-table tr.def-row:nth-child(even) td{background:#f0f9f1}
+.def-table tr.def-row:nth-child(even) .term{background:#c8e6cb}
+.def-table td{padding:.46rem .8rem;vertical-align:top;line-height:1.5;font-size:.86rem}
+.def-table .term{font-weight:700;width:30%;color:#1a4731;background:#d7edd9;border-right:2px solid #b8dbbe}
+.def-table .defn{color:#222;width:70%}
+.def-table tr.hidden{display:none}
+#no-results{display:none;text-align:center;color:var(--txm);font-size:.9rem;font-weight:600;padding:2rem;background:var(--card);border-radius:var(--r);border:1.5px solid var(--bdr)}
+footer{text-align:center;padding:1.4rem;font-size:.78rem;color:var(--txm);border-top:1px solid var(--bdr);background:var(--card);font-weight:600}
+footer a{color:var(--pr);text-decoration:none}
+@media(max-width:600px){.hero h1{font-size:1.4rem}.def-table .term{width:38%}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="alevel-definitions.html" class="topbar-back">&#8592; Key Definitions</a>
+  <span class="topbar-title">Paper 2 Definitions</span>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="paper-badge">H432/02</div>
+    <h1>Paper 2: Key Definitions</h1>
+    <p>Synthesis and Analytical Techniques &bull; Modules 2, 4 and 6</p>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 52" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,26 C240,52 480,0 720,26 C960,52 1200,0 1440,26 L1440,52 L0,52 Z" fill="#f4f6fb"/>
+  </svg>
+</div>
+
+<main>
+
+<div class="search-wrap">
+  <div class="search-inner">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input id="search" type="text" placeholder="Search any definition&hellip;" oninput="filterDefs(this.value)">
+    <span id="count"></span>
+  </div>
+</div>
+<div id="no-results">No definitions match your search. Try a different term.</div>
+
+<!-- MODULE 2 recap -->
+<div class="module">
+  <div class="module-hd open" onclick="toggleMod(this)">Module 2: Foundations in Chemistry (also on Paper 1) <span class="toggle">&#9660;</span></div>
+  <div class="module-body open">
+    <div class="sub-hd">Key terms from Module 2</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Relative atomic mass (A<sub>r</sub>)</td><td class="defn">The weighted mean mass of an atom of an element compared with 1/12 of the mass of one atom of carbon-12</td></tr>
+      <tr class="def-row"><td class="term">Empirical formula</td><td class="defn">The simplest whole number ratio of atoms of each element in a compound</td></tr>
+      <tr class="def-row"><td class="term">Molecular formula</td><td class="defn">The actual number of atoms of each element in one molecule of a compound</td></tr>
+      <tr class="def-row"><td class="term">Percentage yield</td><td class="defn">(actual yield &divide; theoretical yield) &times; 100%</td></tr>
+      <tr class="def-row"><td class="term">Atom economy</td><td class="defn">(sum of molar masses of desired products &divide; sum of molar masses of all products) &times; 100%</td></tr>
+      <tr class="def-row"><td class="term">Oxidation</td><td class="defn">Loss of electrons; or an increase in oxidation number</td></tr>
+      <tr class="def-row"><td class="term">Reduction</td><td class="defn">Gain of electrons; or a decrease in oxidation number</td></tr>
+      <tr class="def-row"><td class="term">Oxidation number</td><td class="defn">A measure of the degree of oxidation of an atom; the charge it would carry if all bonds were fully ionic</td></tr>
+      <tr class="def-row"><td class="term">Disproportionation</td><td class="defn">A redox reaction in which the same element is simultaneously oxidised and reduced</td></tr>
+      <tr class="def-row"><td class="term">Electronegativity</td><td class="defn">The ability of an atom in a covalent bond to attract the shared pair of electrons towards itself</td></tr>
+      <tr class="def-row"><td class="term">Hydrogen bond</td><td class="defn">A strong intermolecular force between an H atom bonded to N, O, or F and a lone pair on a neighbouring N, O, or F atom</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<!-- MODULE 4 -->
+<div class="module">
+  <div class="module-hd open" onclick="toggleMod(this)">Module 4: Core Organic Chemistry <span class="toggle">&#9660;</span></div>
+  <div class="module-body open">
+
+    <div class="sub-hd">4.1 Basic Concepts</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Homologous series</td><td class="defn">A series of organic compounds with the same functional group and general formula, in which successive members differ by one &ndash;CH<sub>2</sub>&ndash; unit</td></tr>
+      <tr class="def-row"><td class="term">Functional group</td><td class="defn">An atom or group of atoms in an organic molecule responsible for its characteristic reactions</td></tr>
+      <tr class="def-row"><td class="term">Displayed formula</td><td class="defn">A formula showing every atom and every covalent bond in a molecule</td></tr>
+      <tr class="def-row"><td class="term">Skeletal formula</td><td class="defn">A simplified formula showing only the carbon skeleton and functional groups; C and H atoms are omitted</td></tr>
+      <tr class="def-row"><td class="term">Structural isomers</td><td class="defn">Compounds with the same molecular formula but different structural arrangements of atoms</td></tr>
+      <tr class="def-row"><td class="term">Stereoisomers</td><td class="defn">Compounds with the same molecular formula and structural formula but different spatial arrangements of atoms</td></tr>
+      <tr class="def-row"><td class="term">E/Z isomerism</td><td class="defn">Stereoisomerism arising from restricted rotation about a C=C double bond; E (opposite) and Z (same side) assigned by Cahn-Ingold-Prelog priority rules</td></tr>
+      <tr class="def-row"><td class="term">Optical isomers (enantiomers)</td><td class="defn">Stereoisomers that are non-superimposable mirror images of each other; arise from a chiral centre</td></tr>
+      <tr class="def-row"><td class="term">Chiral centre</td><td class="defn">A carbon atom bonded to four different atoms or groups; also called a stereocentre</td></tr>
+      <tr class="def-row"><td class="term">Saturated compound</td><td class="defn">An organic compound containing only single C&ndash;C bonds</td></tr>
+      <tr class="def-row"><td class="term">Unsaturated compound</td><td class="defn">An organic compound containing one or more C=C or C&equiv;C bonds</td></tr>
+      <tr class="def-row"><td class="term">Homolytic fission</td><td class="defn">The breaking of a covalent bond in which one electron goes to each atom, forming two radicals</td></tr>
+      <tr class="def-row"><td class="term">Heterolytic fission</td><td class="defn">The breaking of a covalent bond in which both electrons go to one atom, forming a cation and an anion</td></tr>
+      <tr class="def-row"><td class="term">Electrophile</td><td class="defn">An electron-pair acceptor; attacks regions of high electron density</td></tr>
+      <tr class="def-row"><td class="term">Nucleophile</td><td class="defn">An electron-pair donor; attacks regions of low electron density</td></tr>
+      <tr class="def-row"><td class="term">Free radical</td><td class="defn">A species with an unpaired electron; highly reactive</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">4.2 Hydrocarbons</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Hydrocarbon</td><td class="defn">A compound containing only carbon and hydrogen</td></tr>
+      <tr class="def-row"><td class="term">Alkane</td><td class="defn">A saturated hydrocarbon with general formula C<sub>n</sub>H<sub>2n+2</sub></td></tr>
+      <tr class="def-row"><td class="term">Alkene</td><td class="defn">An unsaturated hydrocarbon containing one or more C=C double bonds</td></tr>
+      <tr class="def-row"><td class="term">Addition reaction</td><td class="defn">A reaction in which two or more molecules combine to form a single product, with no other products formed</td></tr>
+      <tr class="def-row"><td class="term">Substitution reaction</td><td class="defn">A reaction in which an atom or group in a molecule is replaced by a different atom or group</td></tr>
+      <tr class="def-row"><td class="term">Elimination reaction</td><td class="defn">A reaction in which a small molecule is removed from a larger organic molecule to form a double bond</td></tr>
+      <tr class="def-row"><td class="term">Free radical substitution</td><td class="defn">A substitution mechanism involving free radical intermediates; occurs in three stages: initiation, propagation, and termination</td></tr>
+      <tr class="def-row"><td class="term">Initiation</td><td class="defn">The first stage of a free radical mechanism: radicals are generated by UV light causing homolytic fission</td></tr>
+      <tr class="def-row"><td class="term">Propagation</td><td class="defn">The repeating stages of a free radical mechanism in which radicals are consumed and regenerated, perpetuating the chain</td></tr>
+      <tr class="def-row"><td class="term">Termination</td><td class="defn">The final stages of a free radical mechanism in which two radicals combine to form a stable product, ending the chain</td></tr>
+      <tr class="def-row"><td class="term">Electrophilic addition</td><td class="defn">An addition reaction initiated by an electrophile attacking a C=C double bond</td></tr>
+      <tr class="def-row"><td class="term">Markovnikov&rsquo;s rule</td><td class="defn">In addition of HX to an unsymmetrical alkene, H adds to the carbon with more H atoms already attached, giving the more stable carbocation intermediate</td></tr>
+      <tr class="def-row"><td class="term">Carbocation</td><td class="defn">A positively charged carbon species; stability increases in the order primary &lt; secondary &lt; tertiary</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">4.3 Halogenoalkanes and Alcohols</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Halogenoalkane</td><td class="defn">An alkane in which one or more hydrogen atoms have been replaced by halogen atoms</td></tr>
+      <tr class="def-row"><td class="term">Primary (1&deg;) halogenoalkane</td><td class="defn">A halogenoalkane in which the carbon bearing the halogen is bonded to only one other carbon</td></tr>
+      <tr class="def-row"><td class="term">Secondary (2&deg;) halogenoalkane</td><td class="defn">A halogenoalkane in which the carbon bearing the halogen is bonded to two other carbons</td></tr>
+      <tr class="def-row"><td class="term">Tertiary (3&deg;) halogenoalkane</td><td class="defn">A halogenoalkane in which the carbon bearing the halogen is bonded to three other carbons</td></tr>
+      <tr class="def-row"><td class="term">Nucleophilic substitution</td><td class="defn">A substitution reaction in which a nucleophile replaces a leaving group</td></tr>
+      <tr class="def-row"><td class="term">S<sub>N</sub>1 mechanism</td><td class="defn">A two-step nucleophilic substitution: leaving group departs first to form a carbocation intermediate, then the nucleophile attacks; rate = k[RX]; favoured by tertiary halogenoalkanes</td></tr>
+      <tr class="def-row"><td class="term">S<sub>N</sub>2 mechanism</td><td class="defn">A one-step nucleophilic substitution: nucleophile attacks as the leaving group departs; rate = k[RX][Nu]; favoured by primary halogenoalkanes</td></tr>
+      <tr class="def-row"><td class="term">Leaving group</td><td class="defn">The atom or group that departs with the bonding electron pair during a substitution reaction</td></tr>
+      <tr class="def-row"><td class="term">Alcohol</td><td class="defn">An organic compound containing the hydroxyl (&ndash;OH) group bonded to a carbon chain</td></tr>
+      <tr class="def-row"><td class="term">Primary (1&deg;) alcohol</td><td class="defn">An alcohol in which the carbon bearing &ndash;OH is bonded to one other carbon; oxidised to an aldehyde (then carboxylic acid)</td></tr>
+      <tr class="def-row"><td class="term">Secondary (2&deg;) alcohol</td><td class="defn">An alcohol in which the carbon bearing &ndash;OH is bonded to two other carbons; oxidised to a ketone</td></tr>
+      <tr class="def-row"><td class="term">Tertiary (3&deg;) alcohol</td><td class="defn">An alcohol in which the carbon bearing &ndash;OH is bonded to three other carbons; resists oxidation</td></tr>
+      <tr class="def-row"><td class="term">Dehydration</td><td class="defn">An elimination reaction in which water is removed from an alcohol to form an alkene; requires a concentrated acid catalyst</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">4.4 Carbonyl Compounds (AS)</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Aldehyde</td><td class="defn">A carbonyl compound in which the C=O carbon is bonded to at least one H atom (&ndash;CHO group); the carbonyl is at the end of the chain</td></tr>
+      <tr class="def-row"><td class="term">Ketone</td><td class="defn">A carbonyl compound in which the C=O carbon is bonded to two other carbon atoms; the carbonyl is within the chain</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">4.5 Analytical Techniques: MS and IR</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Mass spectrometry</td><td class="defn">An analytical technique in which molecules are ionised and separated by mass-to-charge ratio (m/z); gives relative molecular mass and structural information</td></tr>
+      <tr class="def-row"><td class="term">Molecular ion (M<sup>+</sup>)</td><td class="defn">The ion formed when a molecule loses one electron in mass spectrometry; its m/z value equals the relative molecular mass</td></tr>
+      <tr class="def-row"><td class="term">Base peak</td><td class="defn">The most abundant ion in a mass spectrum; the tallest peak, assigned an intensity of 100%</td></tr>
+      <tr class="def-row"><td class="term">Fragmentation</td><td class="defn">The breaking of the molecular ion into smaller ions in mass spectrometry; the pattern of fragments gives structural information</td></tr>
+      <tr class="def-row"><td class="term">Infrared (IR) spectroscopy</td><td class="defn">An analytical technique that identifies functional groups by the absorption of infrared radiation at characteristic wavenumbers</td></tr>
+      <tr class="def-row"><td class="term">Wavenumber</td><td class="defn">The unit used in IR spectroscopy (cm<sup>&minus;1</sup>); the reciprocal of the wavelength of the absorbed radiation</td></tr>
+      <tr class="def-row"><td class="term">Fingerprint region</td><td class="defn">The region of an IR spectrum below approximately 1500 cm<sup>&minus;1</sup>; highly specific to each compound and used to confirm identity by comparison with reference spectra</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<!-- MODULE 6 -->
+<div class="module">
+  <div class="module-hd open" onclick="toggleMod(this)">Module 6: Organic Chemistry and Analysis <span class="toggle">&#9660;</span></div>
+  <div class="module-body open">
+
+    <div class="sub-hd">6.1 Aromatic Chemistry</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Arene</td><td class="defn">A hydrocarbon containing one or more benzene rings</td></tr>
+      <tr class="def-row"><td class="term">Benzene</td><td class="defn">A planar, cyclic hydrocarbon (C<sub>6</sub>H<sub>6</sub>) with a delocalised system of &pi; electrons spread equally over all six carbon atoms</td></tr>
+      <tr class="def-row"><td class="term">Delocalisation</td><td class="defn">The spreading of &pi; electron density over more than two atoms; in benzene, the six &pi; electrons are spread over the entire ring</td></tr>
+      <tr class="def-row"><td class="term">Electrophilic substitution</td><td class="defn">A reaction in which an electrophile replaces a hydrogen atom on an aromatic ring, preserving the delocalised ring system</td></tr>
+      <tr class="def-row"><td class="term">Friedel-Crafts alkylation</td><td class="defn">Electrophilic aromatic substitution in which an alkyl group is introduced onto a benzene ring using a halogenoalkane and a Lewis acid catalyst (e.g. AlCl<sub>3</sub>)</td></tr>
+      <tr class="def-row"><td class="term">Friedel-Crafts acylation</td><td class="defn">Electrophilic aromatic substitution in which an acyl group (&ndash;COR) is introduced onto a benzene ring using an acyl chloride and a Lewis acid catalyst</td></tr>
+      <tr class="def-row"><td class="term">Lewis acid</td><td class="defn">An electron-pair acceptor (e.g. AlCl<sub>3</sub>, FeBr<sub>3</sub>); acts as a halogen carrier catalyst in Friedel-Crafts reactions</td></tr>
+      <tr class="def-row"><td class="term">Activating group</td><td class="defn">A substituent on a benzene ring that increases reactivity towards electrophilic substitution by donating electron density into the ring; directs to ortho and para positions</td></tr>
+      <tr class="def-row"><td class="term">Deactivating group</td><td class="defn">A substituent on a benzene ring that decreases reactivity towards electrophilic substitution by withdrawing electron density; directs to the meta position</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">6.2 Carbonyl Compounds</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Nucleophilic addition</td><td class="defn">A reaction mechanism in which a nucleophile attacks the electrophilic carbon of a C=O bond, adding across the double bond</td></tr>
+      <tr class="def-row"><td class="term">Reduction of carbonyl</td><td class="defn">Conversion of C=O to C&ndash;OH using NaBH<sub>4</sub> (or LiAlH<sub>4</sub>): aldehyde &rarr; primary alcohol; ketone &rarr; secondary alcohol</td></tr>
+      <tr class="def-row"><td class="term">Tollens&rsquo; reagent</td><td class="defn">Ammoniacal silver nitrate solution; forms a silver mirror when warmed with an aldehyde but not a ketone</td></tr>
+      <tr class="def-row"><td class="term">Fehling&rsquo;s solution</td><td class="defn">An alkaline copper(II) complex; forms a brick-red precipitate of Cu<sub>2</sub>O when warmed with an aldehyde but not a ketone</td></tr>
+      <tr class="def-row"><td class="term">2,4-DNPH</td><td class="defn">2,4-dinitrophenylhydrazine; forms a yellow-orange precipitate with any aldehyde or ketone, confirming the presence of a C=O group</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">6.3 Carboxylic Acids and Esters</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Carboxylic acid</td><td class="defn">An organic compound containing the &ndash;COOH (carboxyl) functional group</td></tr>
+      <tr class="def-row"><td class="term">Ester</td><td class="defn">An organic compound containing the &ndash;COO&ndash; linkage; formed from a carboxylic acid and an alcohol</td></tr>
+      <tr class="def-row"><td class="term">Esterification</td><td class="defn">The reversible reaction between a carboxylic acid and an alcohol to form an ester and water; requires an acid catalyst</td></tr>
+      <tr class="def-row"><td class="term">Hydrolysis</td><td class="defn">The breaking of a chemical bond by reaction with water</td></tr>
+      <tr class="def-row"><td class="term">Acid hydrolysis</td><td class="defn">Hydrolysis of an ester using dilute acid and heat; produces the carboxylic acid and the alcohol; reversible</td></tr>
+      <tr class="def-row"><td class="term">Base hydrolysis (saponification)</td><td class="defn">Hydrolysis of an ester using aqueous alkali (e.g. NaOH) and heat; produces the carboxylate salt and the alcohol; irreversible</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">6.4 Nitrogen Compounds</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Amine</td><td class="defn">An organic compound derived from ammonia by replacing one or more H atoms with alkyl or aryl groups; the N atom retains a lone pair</td></tr>
+      <tr class="def-row"><td class="term">Primary (1&deg;) amine</td><td class="defn">An amine with structure R&ndash;NH<sub>2</sub>; N bonded to one carbon and two H atoms</td></tr>
+      <tr class="def-row"><td class="term">Secondary (2&deg;) amine</td><td class="defn">An amine with structure R<sub>2</sub>NH; N bonded to two carbons and one H</td></tr>
+      <tr class="def-row"><td class="term">Tertiary (3&deg;) amine</td><td class="defn">An amine with structure R<sub>3</sub>N; N bonded to three carbons</td></tr>
+      <tr class="def-row"><td class="term">Amide</td><td class="defn">A compound containing the &ndash;CONH<sub>2</sub>, &ndash;CONHR, or &ndash;CONR<sub>2</sub> functional group; formed from a carboxylic acid derivative and an amine</td></tr>
+      <tr class="def-row"><td class="term">Amino acid</td><td class="defn">An organic compound containing both &ndash;NH<sub>2</sub> and &ndash;COOH on the same molecule; the simplest units of proteins</td></tr>
+      <tr class="def-row"><td class="term">Zwitterion</td><td class="defn">The ionic form of an amino acid in which &ndash;NH<sub>2</sub> is protonated to &ndash;NH<sub>3</sub><sup>+</sup> and &ndash;COOH is deprotonated to &ndash;COO<sup>&minus;</sup>; net charge is zero</td></tr>
+      <tr class="def-row"><td class="term">Isoelectric point</td><td class="defn">The pH at which an amino acid exists predominantly as a zwitterion and carries no overall charge</td></tr>
+      <tr class="def-row"><td class="term">Peptide bond</td><td class="defn">The amide bond (&ndash;CO&ndash;NH&ndash;) formed between the &ndash;COOH of one amino acid and the &ndash;NH<sub>2</sub> of another, with loss of water</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">6.5 Polymers</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Monomer</td><td class="defn">A small molecule that can react repeatedly to form a polymer</td></tr>
+      <tr class="def-row"><td class="term">Polymer</td><td class="defn">A large molecule formed by the joining of many monomer units</td></tr>
+      <tr class="def-row"><td class="term">Repeat unit</td><td class="defn">The smallest structural unit that repeats throughout a polymer chain</td></tr>
+      <tr class="def-row"><td class="term">Addition polymer</td><td class="defn">A polymer formed by the repeated addition of unsaturated monomers (e.g. alkenes); no other products are formed</td></tr>
+      <tr class="def-row"><td class="term">Condensation polymer</td><td class="defn">A polymer formed from bifunctional monomers; a small molecule (usually H<sub>2</sub>O or HCl) is eliminated with each bond formed</td></tr>
+      <tr class="def-row"><td class="term">Polyester</td><td class="defn">A condensation polymer in which repeat units are linked by ester bonds (&ndash;COO&ndash;); formed from a diol and a dicarboxylic acid</td></tr>
+      <tr class="def-row"><td class="term">Polyamide</td><td class="defn">A condensation polymer in which repeat units are linked by amide bonds (&ndash;CONH&ndash;); formed from a diamine and a dicarboxylic acid or diacid chloride</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">6.6 Organic Synthesis</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Retrosynthetic analysis</td><td class="defn">A strategy for planning a synthesis in which the target molecule is broken down step by step into simpler precursors, working backwards from product to starting materials</td></tr>
+      <tr class="def-row"><td class="term">Protecting group</td><td class="defn">A group temporarily added to a functional group to prevent it from reacting during a subsequent step, then removed to regenerate the original group</td></tr>
+      <tr class="def-row"><td class="term">Reflux</td><td class="defn">Heating a reaction mixture with a vertical condenser so that vapour condenses and returns to the flask; allows prolonged heating without loss of volatile material</td></tr>
+      <tr class="def-row"><td class="term">Distillation</td><td class="defn">A technique for separating or purifying liquids based on differences in boiling point</td></tr>
+    </tbody></table>
+
+    <div class="sub-hd">6.7 Chromatography and Spectroscopy</div>
+    <table class="def-table"><tbody>
+      <tr class="def-row"><td class="term">Chromatography</td><td class="defn">A separation technique based on the differential migration of components between a stationary phase and a mobile phase</td></tr>
+      <tr class="def-row"><td class="term">Stationary phase</td><td class="defn">The phase that does not move in chromatography (e.g. silica in TLC; liquid coating in GC)</td></tr>
+      <tr class="def-row"><td class="term">Mobile phase</td><td class="defn">The phase that moves through the stationary phase, carrying sample components with it (solvent in TLC; carrier gas in GC)</td></tr>
+      <tr class="def-row"><td class="term">R<sub>f</sub> value</td><td class="defn">The ratio of the distance moved by the solute to the distance moved by the solvent front in TLC: R<sub>f</sub> = distance of spot &divide; distance of solvent front</td></tr>
+      <tr class="def-row"><td class="term">Retention time</td><td class="defn">The time taken for a component to travel through the GC column; used to identify substances by comparison with standards</td></tr>
+      <tr class="def-row"><td class="term"><sup>1</sup>H NMR spectroscopy</td><td class="defn">A technique using the absorption of radiofrequency radiation by proton nuclei in a magnetic field to give information about the number and chemical environment of H atoms in a molecule</td></tr>
+      <tr class="def-row"><td class="term"><sup>13</sup>C NMR spectroscopy</td><td class="defn">A technique giving information about the number and chemical environment of carbon atoms in a molecule</td></tr>
+      <tr class="def-row"><td class="term">Chemical shift (&delta;)</td><td class="defn">The position of an NMR peak, measured in ppm relative to TMS; reflects the electronic environment of the nucleus</td></tr>
+      <tr class="def-row"><td class="term">TMS (tetramethylsilane)</td><td class="defn">The reference standard for NMR; defined as &delta; = 0 ppm; gives a single sharp signal outside the range of most organic compounds</td></tr>
+      <tr class="def-row"><td class="term">Shielding</td><td class="defn">The effect of electron density surrounding a nucleus that reduces the effective magnetic field; shielded protons resonate at lower &delta; values</td></tr>
+      <tr class="def-row"><td class="term">Deshielding</td><td class="defn">Reduced electron density around a nucleus (e.g. near electronegative atoms or &pi; systems), causing resonance at higher &delta; values</td></tr>
+      <tr class="def-row"><td class="term">Spin-spin coupling (splitting)</td><td class="defn">The splitting of an NMR signal into multiple peaks due to the magnetic influence of neighbouring non-equivalent protons</td></tr>
+      <tr class="def-row"><td class="term">n+1 rule</td><td class="defn">A proton adjacent to n non-equivalent protons gives a signal split into n+1 peaks</td></tr>
+      <tr class="def-row"><td class="term">Singlet / doublet / triplet / quartet</td><td class="defn">NMR peaks split into 1 / 2 / 3 / 4 lines; produced when adjacent to 0 / 1 / 2 / 3 non-equivalent protons respectively</td></tr>
+      <tr class="def-row"><td class="term">Integration</td><td class="defn">The relative area under an NMR peak; proportional to the number of equivalent protons giving that signal</td></tr>
+      <tr class="def-row"><td class="term">High-resolution mass spectrometry</td><td class="defn">Mass spectrometry that measures m/z values to four or more decimal places, enabling determination of the molecular formula from the exact mass</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  OCR A Level Chemistry H432/02 &nbsp;&bull;&nbsp; <a href="alevel-definitions.html">&#8592; All definition sheets</a> &nbsp;&bull;&nbsp; <a href="alevel-home.html">A Level Home</a>
+</footer>
+
+<script>
+function toggleMod(hd){hd.classList.toggle('open');hd.nextElementSibling.classList.toggle('open')}
+function filterDefs(q){
+  q=q.toLowerCase().trim();
+  const rows=document.querySelectorAll('.def-row');
+  let v=0;
+  rows.forEach(r=>{const m=!q||r.textContent.toLowerCase().includes(q);r.classList.toggle('hidden',!m);if(m)v++});
+  if(q){document.querySelectorAll('.module-body,.module-hd').forEach(e=>e.classList.add('open'))}
+  document.getElementById('count').textContent=q?v+' result'+(v!==1?'s':''):'';
+  document.getElementById('no-results').style.display=(q&&v===0)?'block':'none';
+}
+</script>
+</body>
+</html>
